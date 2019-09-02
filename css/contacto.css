@@ -8,3 +8,28 @@ div.borde{
   height: 1vh;
   background-color:black;
 }
+header{
+  width: 100%;
+  height: 8vh;
+}
+div.formulario{
+  text-align: left;
+  /*background-color:rgba(163, 163, 163, 0.82);*/
+  padding: 10px;
+}
+form input{
+  padding: 7px;
+  width: 100%;
+}
+form select{
+  width: 100%;
+  padding: 7px;
+}
+form button{
+  padding: 10px;
+  width: 100px;
+  
+}
+{
+
+}
