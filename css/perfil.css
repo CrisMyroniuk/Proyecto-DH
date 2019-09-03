@@ -1,0 +1,50 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header{
+  position: fixed;
+  z-index: 10;
+}
+
+article ul li a{
+  color: black;
+}
+
+#menunav{
+  margin-right: 3vh;
+}
+#menunav, article{
+  margin-top: 8vh;
+  margin-left: 2vh;
+}
+
+article li{
+  margin-top: 3vh;
+  list-style: none;
+}
+
+article h2{
+  text-align: center;
+}
+
+footer{
+  text-align: center;
+  margin-top: 3vh;
+}
+
+@media (min-width:460px) {
+  #main h2,p{
+    text-align: left;
+  }
+  #main{
+    margin-bottom: 20vh;
+  }
+  footer h3 a{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2vh;
+  }
+}

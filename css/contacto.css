@@ -3,14 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-div.borde{
-  width: 100%;
-  height: 1vh;
-  background-color:black;
-}
+
 header{
   width: 100%;
-  height: 8vh;
 }
 div.formulario{
   text-align: left;
@@ -28,10 +23,9 @@ form select{
 form button{
   padding: 10px;
   width: 100px;
-
 }
 form input.mensaje{
-  height: 100px;
+  height: 5vh;
   width: 100%;
 }
 div.container h1{
