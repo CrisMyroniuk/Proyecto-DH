@@ -72,7 +72,7 @@ header img{
   }
 }
 
-button{
+.contenedor button{
   background-color:rgb(132, 140, 142);
   border: 0;
   float: right;
