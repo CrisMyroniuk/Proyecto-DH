@@ -30,6 +30,10 @@ form button{
   width: 100px;
 
 }
+form input.mensaje{
+  height: 100px;
+  width: 100%;
+}
 div.container h1{
   border-bottom:2px solid black;
 }
