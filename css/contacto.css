@@ -12,9 +12,26 @@ div.formulario{
   /*background-color:rgba(163, 163, 163, 0.82);*/
   padding: 10px;
 }
+div.container{
+
+}
 form input{
   padding: 7px;
   width: 100%;
+  border:none;
+  border-bottom: 1px solid grey;
+
+  outline:0;
+}
+form input:hover{
+  border-bottom: 1.5px solid rgb(65, 164, 155);
+}
+
+form select{
+
+}
+form label {
+  color:#9e9e9e;
 }
 form select{
   width: 100%;
@@ -30,4 +47,5 @@ form input.mensaje{
 }
 div.container h1{
   border-bottom:2px solid black;
+  color:black;
 }
