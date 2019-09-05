@@ -5,6 +5,8 @@
 
 }
 
+
+
 header{
   width: 100%;
   background-color: rgb(132, 140, 142);
@@ -64,6 +66,7 @@ header img{
 #menu:checked ~ .menu{
   margin: 0;
 }
+
 
 @media (max-width:760px) {
   .menu{
