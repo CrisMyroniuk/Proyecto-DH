@@ -1,0 +1,53 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+header{
+  position: fixed;
+  z-index: 10;
+}
+#container{
+margin-top: 0;
+}
+
+#content{
+  width: 100%;
+  padding-top: 2vh;
+}
+
+#section{
+  width: 100%;
+  height: 30vh;
+  border: 1px solid black;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#main{
+  text-align: center;
+  padding-top: 5vh;
+}
+
+#main p{
+  margin: 0 auto;
+  width: 80%;
+  text-align: justify;
+}
+
+#main div{
+  margin-bottom: 6vh;
+  margin: auto;
+
+}
+
+#footer{
+  width: 100%;
+  margin-top: 5vh;
+  padding-top: 1vh;
+  padding-right: 1vh;
+  text-align: right;
+  background-color: rgb(87, 210, 240);
+}

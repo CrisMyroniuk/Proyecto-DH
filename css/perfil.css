@@ -9,42 +9,50 @@ header{
   z-index: 10;
 }
 
-article ul li a{
-  color: black;
+#container{
+  padding-top: 10vh;
+  width: 100%;
+
 }
 
-#menunav{
-  margin-right: 3vh;
-}
-#menunav, article{
-  margin-top: 8vh;
-  margin-left: 2vh;
+h1{
+  text-align: center;
+
 }
 
-article li{
-  margin-top: 3vh;
+.row{
+  margin-top: 5vh;
+}
+
+#nav{
+  margin-left: 10px;
+}
+#nav li {
+  margin-bottom: 2vh;
   list-style: none;
 }
 
-article h2{
-  text-align: center;
+#nav a{
+  color:black;
 }
 
-footer{
-  text-align: center;
-  margin-top: 3vh;
+
+#footer{
+  text-align: right;
+  margin-top: 10vh;
+  padding-right: 10px;
 }
 
-@media (min-width:460px) {
-  #main h2,p{
-    text-align: left;
-  }
+@media (max-width:768px) {
   #main{
-    margin-bottom: 20vh;
+    margin-left: 15px;
   }
-  footer h3 a{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 2vh;
+  #main h3{
+    text-align: center;
   }
+
+  #footer{
+    text-align: center;
+  }
+
 }
