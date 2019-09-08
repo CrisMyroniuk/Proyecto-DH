@@ -24,11 +24,16 @@ h1{
   margin-top: 5vh;
 }
 
+div#main{
+  margin-top: 5vh;
+}
+
 #nav{
+  margin-top: 6vh;
   margin-left: 10px;
 }
 #nav li {
-  margin-bottom: 2vh;
+  margin-bottom: 5vh;
   list-style: none;
 }
 
