@@ -15,7 +15,7 @@ div.formulario{
 div.container{
   text-align: center;
   margin-top:20px;
-  
+
 }
 div.container{
 
@@ -29,6 +29,9 @@ form input{
   outline:0;
 }
 form input:hover{
+  border-bottom: 1.5px solid rgb(65, 164, 155);
+}
+form input:focus-within {
   border-bottom: 1.5px solid rgb(65, 164, 155);
 }
 
