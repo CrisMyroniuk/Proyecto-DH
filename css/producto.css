@@ -1,0 +1,53 @@
+div.container-fluid ul{
+  overflow: hidden;
+}
+header nav ul li{
+  list-style: none;
+  text-decoration: none;
+}
+header nav ul li a{
+  list-style: none;
+
+  color:black;
+}
+div.container{
+  border:1px solid black;
+  margin-top:50px;
+
+}
+div.img-producto img{
+  width: 100%;
+}
+div.carrito{
+margin-bottom: 20px;
+margin-top:20px;
+}
+input.cantidad{
+  width:50px;
+  float:right;
+  text-align: center;
+
+}
+p.cantidad{
+  margin-top:15px;
+}
+select.talle{
+  width:20%;
+  float:right;
+  text-align: center;
+}
+form{
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  padding: 5px;
+
+}
+
+@media (min-width:1024px){
+  div.img-producto{
+    height: 85%;
+  }
+  div.img-producto img{
+    height: 100%;
+  }
+}
