@@ -61,3 +61,11 @@
   font-size: 15px;
 
 }
+
+  @media query {
+    (max-whidth:480px){
+      container{
+        width: 100%;    
+
+    }
+  }

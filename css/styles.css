@@ -17,6 +17,8 @@ div #main{
 }
 
 
+
+
 header{
   width: 100%;
   background-color: white;
@@ -92,4 +94,8 @@ header img{
   float: right;
   margin-right: 20px;
   margin-top: 5px;
+}
+
+img.zoom:hover{
+  transform:scale(1.1);
 }
