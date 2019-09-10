@@ -18,6 +18,9 @@ div.container{
 div.img-producto img{
   width: 100%;
 }
+div.img-producto img:hover{
+  
+}
 div.carrito{
 margin-bottom: 20px;
 margin-top:20px;
