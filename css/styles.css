@@ -19,6 +19,7 @@ div #main{
 
 
 
+
 header{
   width: 100%;
   background-color: white;
@@ -98,4 +99,16 @@ header img{
 
 img.zoom:hover{
   transform:scale(1.1);
+}
+footer{
+  background-color:#f52f41;
+  color:white;
+}
+footer ul li a{
+  color:white;
+}
+footer ul li a:hover{
+  text-decoration: none;
+  color:white;
+
 }
