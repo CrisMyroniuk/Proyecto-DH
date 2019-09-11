@@ -135,5 +135,13 @@ div.logo img{
 }
 
 @media (min-width:1024px){
+div.logo img{
+  width: 15%;
+}
+}
 
+@media (min-width:768px){
+div.logo img{
+  width: 15%;
+}
 }
