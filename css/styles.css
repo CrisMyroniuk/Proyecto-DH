@@ -30,6 +30,8 @@ header{
   display: none;
 }
 
+
+
 header label{
   display: inline-block;
   width: 60px;
@@ -111,4 +113,27 @@ footer ul li a:hover{
   text-decoration: none;
   color:white;
 
+}
+div.menu-footer{
+  margin-left:20px;
+
+}
+div.menu.footer ul{
+
+}
+div.menu-footer ul li{
+  list-style: none;
+
+}
+div.logo{
+  width: 300px;
+  display: inline;
+}
+div.logo img{
+  width:30%;
+  height: 10vh;
+}
+
+@media (min-width:1024px){
+  
 }
