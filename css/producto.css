@@ -1,6 +1,7 @@
 div.container-fluid ul{
   overflow: hidden;
 }
+
 header nav ul li{
   list-style: none;
   text-decoration: none;
@@ -19,7 +20,7 @@ div.img-producto img{
   width: 100%;
 }
 div.img-producto img:hover{
-  
+
 }
 div.carrito{
 margin-bottom: 20px;
