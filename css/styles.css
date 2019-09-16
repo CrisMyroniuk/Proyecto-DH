@@ -130,18 +130,20 @@ div.logo{
   display: inline;
 }
 div.logo img{
-  width:30%;
+  width:40%;
   height: 10vh;
 }
 
+
 @media (min-width:1024px){
 div.logo img{
-  width: 15%;
+  width: 60%;
+  height: 200px;
 }
 }
 
 @media (min-width:768px){
 div.logo img{
-  width: 15%;
+  width: 220px;
 }
 }
