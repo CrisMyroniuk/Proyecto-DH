@@ -12,14 +12,17 @@
 
     <div class="container">
       <h4>Formulario de Registro</h4>
-      <input class="controles" type="text" name="nombres" value="" placeholder="Ingrese su nombre" required>
-      <input class="controles" type="text" name="apellido" value="" placeholder="Ingrese su apellido" required>
-      <input class="controles" type="email" name="correo" value="" placeholder="Ingrese su correo electronico" required>
-      <input class="controles" type="password" name="contraseña" value="" placeholder="Ingrese su contraseña" required>
-      <input class="controles" type="password" name="contraseña" value="" placeholder="Vuelva a ingresar su contraseña" required>
-      <p>Estoy de acuerdo con <a href="#">Términos y Condiciones</a>  </p>
-      <button class="boton" type="button" class="btn btn-secondary btn-sm"><a href="login.html">Registrar</a></button>
-      <p>¿Ya estás registrado? <a class="link" href="login.html">Iniciar sesión</a></a> </p>
+      <form class="" action="index.html" method="post" enctype="multipart/form-data">
+        <input class="controles" type="text" name="nombres" value="" placeholder="Ingrese su nombre" required>
+        <input class="controles" type="text" name="apellido" value="" placeholder="Ingrese su apellido" required>
+        <input class="controles" type="email" name="correo" value="" placeholder="Ingrese su correo electronico" required>
+        <input class="controles" type="password" name="contraseña" value="" placeholder="Ingrese su contraseña" required>
+        <input class="controles" type="password" name="confirmacion" value="" placeholder="Vuelva a ingresar su contraseña" required>
+        <p>Estoy de acuerdo con <a href="#">Términos y Condiciones</a>  </p>
+        <button class="boton" type="submit" class="btn btn-secondary btn-sm"><a href="login.html">Registrar</a></button>
+        <p>¿Ya estás registrado? <a class="link" href="login.html">Iniciar sesión</a></a> </p>
+      </form>
+
 
 
 
