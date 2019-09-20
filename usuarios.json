@@ -1,0 +1,16 @@
+[
+    {
+        "nombre": "gaston",
+        "apellido": "estevez",
+        "email": "gaston@digitalhouse.com",
+        "password": "micontrase\u00f1a",
+        "confirPass": "micontrase\u00f1a"
+    },
+    {
+        "nombre": "Cristian",
+        "apellido": "Myroniu",
+        "email": "nahuelmyronds@fdfs.com",
+        "password": "nahuel",
+        "confirPass": "nahuel"
+    }
+]

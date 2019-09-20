@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php
+require_once('Funciones/FunRegistro.php');
+crearUsuario();
+?>
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -10,13 +15,14 @@
   </head>
   <body>
 
+
     <div class="container">
       <h4>Formulario de Registro</h4>
-      <form class="" action="index.html" method="post" enctype="multipart/form-data">
+      <form class="" action="registro.php" method="post" enctype="multipart/form-data">
         <input class="controles" type="text" name="nombres" value="" placeholder="Ingrese su nombre" required>
         <input class="controles" type="text" name="apellido" value="" placeholder="Ingrese su apellido" required>
         <input class="controles" type="email" name="correo" value="" placeholder="Ingrese su correo electronico" required>
-        <input class="controles" type="password" name="contraseña" value="" placeholder="Ingrese su contraseña" required>
+        <input class="controles" type="password" name="pass" value="" placeholder="Ingrese su contraseña" required>
         <input class="controles" type="password" name="confirmacion" value="" placeholder="Vuelva a ingresar su contraseña" required>
         <p>Estoy de acuerdo con <a href="#">Términos y Condiciones</a>  </p>
         <button class="boton" type="submit" class="btn btn-secondary btn-sm"><a href="login.html">Registrar</a></button>

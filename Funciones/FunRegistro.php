@@ -1,19 +1,21 @@
 <?php
 
-    function crearUsuario(){
-  $if($_POST){
+function crearUsuario(){
+  if($_POST){
     $usuario = [
-    "nombre" => $_POST['nombres']
-    "apellido" => $_POST['apellido']
+    "nombre" => $_POST['nombres'],
+    "apellido" => $_POST['apellido'],
     "email" => $_POST['correo'],
-    "password" => $_POST['contraseña'],
-    "confirPass" => $_POST['confirmacion']
+    "password" => $_POST['pass'],
+    "confirPass" => $_POST['confirmacion'],
   ];
-  $encriptada=password_hash($_POST['contraseña'],PASSWORD_DEFAULT);
+  //$encriptada=password_hash($_POST['contraseña'],PASSWORD_DEFAULT);
   $archivo=file_get_contents('usuarios.json');
   $usuariosJson=json_decode($archivo,true);
-  array_push($usuariosJson,$usuario);
+  $usuariosJson[] = $usuario;
 
-  $json=json_encode($usuariosJson);
+  $json=json_encode($usuariosJson,JSON_PRETTY_PRINT);
   file_put_contents('usuarios.json',$json);
+  }
+
 }
