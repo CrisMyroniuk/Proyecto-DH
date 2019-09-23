@@ -17,7 +17,9 @@ div.container{
   margin-top:20px;
 
 }
-div.container{
+div.container-fluid{
+  ;
+  padding-left: 0;
 
 }
 form input{

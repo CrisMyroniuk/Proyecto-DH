@@ -79,6 +79,12 @@
 
       </form>
     </div>
+    </div>
+    <div class="container-fluid footer" style="padding:0 !important">
+        <?php require_once('footer.html'); ?>
+    </div>
+
+
 
 
 
