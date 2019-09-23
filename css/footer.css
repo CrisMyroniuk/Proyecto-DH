@@ -1,0 +1,53 @@
+footer{
+
+  background-color:#f52f41;
+  color:white;
+
+
+}
+footer div.divLogo{
+  text-align: center;
+  background-color:#f52f41;
+}
+footer div.divMenu{
+  text-align:center;
+  background-color:#f52f41;
+
+}
+footer ul{
+
+}
+footer div.img-logo{
+
+  text-align: center;
+
+}
+footer div.img-logo img{
+  width: 200px;
+}
+footer div.divCopi{
+  text-align: center;
+  background-color:black;
+}
+div.menu-footer ul li{
+  margin-right: 20px;
+  padding: 6px;
+  width: 100%;
+}
+footer ul li a{
+  color:white;
+}
+footer ul li a:hover{
+  text-decoration: none;
+  color:white;
+
+}
+
+
+div.menu-footer ul li{
+  list-style: none;
+  border:1px solid white;
+  margin-top:5px;
+  width: 100%;
+
+}

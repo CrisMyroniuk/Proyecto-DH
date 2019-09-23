@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -9,8 +10,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Michroma&display=swap" rel="stylesheet">
 
-  
+
+
 
   </head>
   <body>
@@ -18,10 +21,7 @@
         <header>
         <input type="checkbox" id="menu">
         <label for="menu"><img src="img/menu.svg" alt=""></label>
-        <div class="logo">
-
-        <!--  <img src="img/logofinal.png" alt="">-->
-        </div>
+        <h1>DIGITAL SPORT</h1>
        <nav class="menu">
          <ul>
            <li><a href="remeras.html">Remeras</a></li>
@@ -108,23 +108,9 @@
 
 
       </div>
-        <footer>
-          <div class="menu-footer">
-            <ul>
-              <li><a href="remeras.html">Remeras</a></li>
-              <li><a href="pantalon.html">Pantalones</a></li>
-              <li><a href="#">Zapatillas</a></li>
-              <li><a href="#">Buzos</a></li>
-              <li><a href="contacto.html">CONTACTO</a></li>
+      <?php require_once('footer.html'); ?>
 
-            </ul>
 
-          </div>
-
-          <h3>TIENDA ® 2019.</h3>
-          <span>Todos los derechos reservados</span>
-
-        </footer>
 
 
 
