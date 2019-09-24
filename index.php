@@ -21,7 +21,8 @@
         <header>
         <input type="checkbox" id="menu">
         <label for="menu"><img src="img/menu.svg" alt=""></label>
-        <h1>DIGITAL SPORT</h1>
+        <a class="logo" href="index.php"><h1>DIGITAL SPORT</h1></a>
+
        <nav class="menu">
          <ul>
            <li><a href="remeras.html">Remeras</a></li>
@@ -47,13 +48,13 @@
             <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active" data-interval="10000">
-                  <img class="banner" src="https://i.pinimg.com/originals/4e/31/42/4e3142435b7a0a2f5f1229db876c7ed4.jpg" class="d-block w-100" alt="...">
+                  <img class="banner" src="img/Portada1.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item" data-interval="2000">
-                  <img class="banner" src="https://s3.amazonaws.com/images.gearjunkie.com/uploads/2016/06/time-to-play-feature.png" class="d-block w-100" alt="...">
+                  <img class="banner" src="img/Portada2.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img class="banner" src="https://cdn.palbin.com/users/8573/images/blog/gallery/banner-4.jpg" class="d-block w-100" alt="">
+                  <img class="banner" src="img/Portada3.jpg" class="d-block w-100" alt="">
 
 
                 </div>
@@ -74,27 +75,46 @@
             <div class="row">
 
               <div class="col-xs-12 col-md-6 col-lg-4">
-              <a href="producto.html"><img class="zoom" src="img/nike01.jpg" alt=""></a>
+              <a href="producto.html"><img class="foto" class="zoom" src="img/imgInicio/Remeras.jpg" alt=""></a>
+              <div class="indicador">
+                <h3 >Remeras</h3>
+              </div>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat</p>
               </div>
               <div class="col-xs-12 col-md-6 col-lg-4">
-                <a href="producto.html"><img class="zoom" src="img/nike010.jpg" alt=""></a>
+                <a href="producto.html"><img class="foto" class="zoom" src="img/imgInicio/Pantalon.jpg" alt=""></a>
+                <div class="indicador">
+                  <h3 >Shorts</h3>
+                </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat non</p>
               </div>
               <div class="col-xs-12 col-md-6 col-lg-4">
-                 <a href="producto.html"><img class="zoom" src="img/nike05.jpg" alt=""></a>
+                 <a href="producto.html"><img class="foto" class="zoom" src="img/imgInicio/Campera.JPG" alt=""></a>
+                 <div class="indicador">
+                   <h3 >Camperas</h3>
+                 </div>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidat</p>
               </div>
               <div class="col-xs-12 col-md-6 col-lg-4">
-                 <a href="producto.html"><img class="zoom" src="img/adidas06.jpg" alt=""></a>
+                 <a href="producto.html"><img class="foto" class="zoom" src="img/imgInicio/Musculosa.jpg" alt=""></a>
+                 <div class="indicador">
+                   <h3 >Musculosas</h3>
+                 </div>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat non proident</p>
               </div>
               <div class="col-xs-12 col-md-6 col-lg-4">
-                 <a href="producto.html"><img class="zoom" src="img/adidas07.jpg" alt=""></a>
+                 <a href="producto.html"><img class="foto" class="zoom" src="img/imgInicio/Zapatillas.jpg" alt=""></a>
+                 <div class="indicador">
+                   <h3 >Zapatillas</h3>
+                 </div>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat non proident</p>
               </div>
               <div class="col-xs-12 col-md-6 col-lg-4">
-                 <a href="producto.html"><img class="zoom" src="img/nike07.jpg" alt=""></a>
+                 <a href="producto.html"><img class="foto" class="zoom" src="img/imgInicio/Accesorios.JPG" alt=""></a>
+                 <div class="indicador">
+                   <h3 >Accesorios</h3>
+                 </div>
+
 
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat non proident</p>
               </div>
