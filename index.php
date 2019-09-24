@@ -74,40 +74,40 @@
             <h1>PRODUCTOS</h1>
             <div class="row">
 
-              <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="col-xs-12 col-md-4 col-lg-4">
               <a href="producto.html"><img class="foto" class="zoom" src="img/imgInicio/Remeras.jpg" alt=""></a>
               <div class="indicador">
                 <h3 >Remeras</h3>
               </div>
               </div>
-              <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="col-xs-12 col-md-4 col-lg-4">
                 <a href="producto.html"><img class="foto" class="zoom" src="img/imgInicio/Pantalon.jpg" alt=""></a>
                 <div class="indicador">
                   <h3 >Shorts</h3>
                 </div>
               </div>
-              <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="col-xs-12 col-md-4 col-lg-4">
                  <a href="producto.html"><img class="foto" class="zoom" src="img/imgInicio/Campera.JPG" alt=""></a>
                  <div class="indicador">
                    <h3 >Camperas</h3>
                  </div>
               </div>
               <div class="dividor cols-xs-12 col-md-12 col-lg-12">
-                
+
               </div>
-              <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="col-xs-12 col-md-4 col-lg-4">
                  <a href="producto.html"><img class="foto" class="zoom" src="img/imgInicio/Musculosa.jpg" alt=""></a>
                  <div class="indicador">
                    <h3 >Musculosas</h3>
                  </div>
               </div>
-              <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="col-xs-12 col-md-4 col-lg-4">
                  <a href="producto.html"><img class="foto" class="zoom" src="img/imgInicio/Zapatillas.jpg" alt=""></a>
                  <div class="indicador">
                    <h3 >Zapatillas</h3>
                  </div>
               </div>
-              <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="col-xs-12 col-md-4 col-lg-4">
                  <a href="producto.html"><img class="foto" class="zoom" src="img/imgInicio/Accesorios.JPG" alt=""></a>
                  <div class="indicador">
                    <h3 >Accesorios</h3>

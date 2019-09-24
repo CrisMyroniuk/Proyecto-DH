@@ -51,3 +51,9 @@ div.menu-footer ul li{
   width: 100%;
 
 }
+@media (min-width:768px) {
+footer ul li a{
+  color:blue;
+
+}
+}
