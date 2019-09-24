@@ -79,35 +79,33 @@
               <div class="indicador">
                 <h3 >Remeras</h3>
               </div>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat</p>
               </div>
               <div class="col-xs-12 col-md-6 col-lg-4">
                 <a href="producto.html"><img class="foto" class="zoom" src="img/imgInicio/Pantalon.jpg" alt=""></a>
                 <div class="indicador">
                   <h3 >Shorts</h3>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat non</p>
               </div>
               <div class="col-xs-12 col-md-6 col-lg-4">
                  <a href="producto.html"><img class="foto" class="zoom" src="img/imgInicio/Campera.JPG" alt=""></a>
                  <div class="indicador">
                    <h3 >Camperas</h3>
                  </div>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidat</p>
+              </div>
+              <div class="dividor cols-xs-12 col-md-12 col-lg-12">
+                
               </div>
               <div class="col-xs-12 col-md-6 col-lg-4">
                  <a href="producto.html"><img class="foto" class="zoom" src="img/imgInicio/Musculosa.jpg" alt=""></a>
                  <div class="indicador">
                    <h3 >Musculosas</h3>
                  </div>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat non proident</p>
               </div>
               <div class="col-xs-12 col-md-6 col-lg-4">
                  <a href="producto.html"><img class="foto" class="zoom" src="img/imgInicio/Zapatillas.jpg" alt=""></a>
                  <div class="indicador">
                    <h3 >Zapatillas</h3>
                  </div>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat non proident</p>
               </div>
               <div class="col-xs-12 col-md-6 col-lg-4">
                  <a href="producto.html"><img class="foto" class="zoom" src="img/imgInicio/Accesorios.JPG" alt=""></a>
@@ -116,7 +114,6 @@
                  </div>
 
 
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat non proident</p>
               </div>
 
               </div>
