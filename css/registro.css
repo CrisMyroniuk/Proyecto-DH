@@ -16,10 +16,7 @@
   font-family: Manjari;
   color: white;
 
-
 }
-
-
 
 .container h4{
   font-size: 22px;
@@ -65,7 +62,7 @@
   @media query {
     (max-whidth:480px){
       container{
-        width: 100%;    
+        width: 100%;
 
     }
   }

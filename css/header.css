@@ -3,8 +3,120 @@
   margin:0;
   box-sizing: border-box;
 }
+
 header{
-width: 100%;
-background-color: white;
+  width: 100%;
+  background-color: white;
+
+}
+header h1{
+  font-family: 'Michroma', sans-serif;
+  font-size: 10px;
+  display: inline;
+  font-weight: bolder;
+
+
+}
+a.logo h1 {
+
+  text-decoration: none;
+  padding:6px;
+
+
+}
+
+a.logo:hover{
+text-decoration: none;
+color:#007bff;
+
+
+}
+img.foto{
+  width: 70%;
+  height:50vh;
+
+}
+
+
+#menu{
+  display: none;
+}
+
+
+
+header label{
+  display: inline-block;
+  width: 60px;
+  height: 50px;
+  padding-top: 5px;
+  padding-left: 10px;
+  border-right: 1px solid #fff;
+}
+
+header label:hover{
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.menu{
+  position: absolute;
+  background: white;
+  width: 30%;
+  margin-left: -30%;
+  transition: all 0.3s;
+   z-index: 10;
+}
+
+header img{
+  width: 30px;
+  height: 40px;
+}
+
+.menu ul {
+   flex-direction: column;
+   list-style: none;
+   display: flex;
+   z-index: 10;
+}
+.menu li {
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+   z-index: 10;
+}
+
+.menu li:hover{
+  background: rgba(0, 0, 0, 0.3);
+}
+.menu li a{
+   display: block;
+   padding: 15px 20px;
+   color: black;
+   text-decoration: none;
+    z-index: 10;
+}
+
+#menu:checked ~ .menu{
+  margin: 0;
+}
+
+
+@media (max-width:760px) {
+  .menu{
+    width: 100%;
+    margin-left: -100%;
+  }
+}
+
+.contenedor button{
+  background-color:white;
+  border: 0;
+  float: right;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+@media (min-width:1024px){
+header h1{
+  font-size: 20px;
 
 }

@@ -12,5 +12,12 @@
         "email": "nahuelmyronds@fdfs.com",
         "password": "nahuel",
         "confirPass": "nahuel"
+    },
+    {
+        "nombre": "lautaro",
+        "apellido": "avila",
+        "email": "lautarojuliann@hotmail.com",
+        "password": "123456",
+        "confirPass": "123456"
     }
 ]

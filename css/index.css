@@ -1,0 +1,46 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div.section{
+  width: 100%;
+  height: 100vh;
+}
+img.banner{
+  width: 100%;
+  height: 50vh;
+}
+div #main{
+  margin-top:200px;
+}
+div.indicador{
+  background-color:rgba(0, 0, 0, 0.38);
+  position:absolute;
+  top:60%;
+  left:27%;
+  width: 50%;
+
+}
+div.col-xs-12{
+margin-bottom:20px!important;
+}
+div.col-lg-4{
+  position:relative;
+  overflow:hidden;
+
+}
+div.indicador h3{
+  color:white;
+}
+div.dividor{
+  width: 100%;
+  height:30px;
+
+}
+
+
+img.zoom:hover{
+  transform:scale(1.1);
+}

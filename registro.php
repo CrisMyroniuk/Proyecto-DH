@@ -11,10 +11,10 @@ crearUsuario();
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/registro.css">
     <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
-    <title>Formulario Registro</title>
+    <title>DIGITAL SPORT</title>
   </head>
   <body>
-
+    <?php require_once('header.php'); ?>
 
     <div class="container">
       <h4>Formulario de Registro</h4>
@@ -26,16 +26,12 @@ crearUsuario();
         <input class="controles" type="password" name="confirmacion" value="" placeholder="Vuelva a ingresar su contraseña" required>
         <p>Estoy de acuerdo con <a href="#">Términos y Condiciones</a>  </p>
         <button class="boton" type="submit" class="btn btn-secondary btn-sm"><a href="login.html">Registrar</a></button>
-        <p>¿Ya estás registrado? <a class="link" href="login.html">Iniciar sesión</a></a> </p>
+        <p>¿Ya estás registrado? <a class="link" href="login.php">Iniciar sesión</a></a> </p>
       </form>
 
-
-
-
-
-
-
     </div>
+
+    <?php require_once('footer.html'); ?>
 
 
 

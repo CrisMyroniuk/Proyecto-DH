@@ -6,9 +6,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/registro.css">
     <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
-    <title>Formulario Registro</title>
+    <title>DIGITAL SPORT</title>
   </head>
   <body>
+
+    <?php //incluyo el header:
+    require_once('header.php');  ?>
 
     <div class="container">
       <h4>Iniciar Sesión</h4>
@@ -17,14 +20,11 @@
       <p>Estoy de acuerdo con <a href="#">Términos y Condiciones</a>  </p>
       <button class="boton" type="button"  class="btn btn-secondary btn-sm"><a href="index.html">Login</a></button>
       <p>¿No tienes cuenta? <a class="link" href="registro.php">Registrate</a></a> </p>
-
-
-
-
-
-
     </div>
 
+    <?php
+    //incluyo el footer:
+    require_once('footer.html'); ?>
 
 
 
