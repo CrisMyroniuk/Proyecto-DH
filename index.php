@@ -16,6 +16,7 @@
   </head>
   <body>
 
+
      <?php //incluyo el header:
      require_once('header.php');  ?>
 
@@ -24,7 +25,7 @@
           <div id="section">
             <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
-                <div class="carousel-item active" data-interval="10000">
+                <div  class="carousel-item active" data-interval="10000">
                   <img class="banner" src="img/Portada1.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item" data-interval="2000">

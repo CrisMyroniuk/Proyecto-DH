@@ -17,7 +17,7 @@ header h1{
 
 
 }
-a.logo h1 {
+.contenedor a.logo h1 {
 
   text-decoration: none;
   padding:6px;
@@ -25,7 +25,7 @@ a.logo h1 {
 
 }
 
-a.logo:hover{
+.contenedor a.logo:hover{
 text-decoration: none;
 color:#007bff;
 
