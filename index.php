@@ -21,7 +21,7 @@
         <header>
         <input type="checkbox" id="menu">
         <label for="menu"><img src="img/menu.svg" alt=""></label>
-        <a class="logo" href="index.php"><h1>DIGITAL SPORT</h1></a>
+        <a class="logo" href="index.php"><h1>DIGITAL SPORT ></h1></a>
 
        <nav class="menu">
          <ul>
@@ -47,7 +47,7 @@
           <div id="section">
             <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
-                <div class="carousel-item active" data-interval="10000">
+                <div  class="carousel-item active" data-interval="10000">
                   <img class="banner" src="img/Portada1.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item" data-interval="2000">
@@ -75,7 +75,7 @@
             <div class="row">
 
               <div class="col-xs-12 col-md-4 col-lg-4">
-              <a href="producto.html"><img class="foto" class="zoom" src="img/imgInicio/Remeras.jpg" alt=""></a>
+              <a href="remeras.html"><img class="foto" class="zoom" src="img/imgInicio/Remeras.jpg" alt=""></a>
               <div class="indicador">
                 <h3 >Remeras</h3>
               </div>

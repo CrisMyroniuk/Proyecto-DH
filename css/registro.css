@@ -25,6 +25,7 @@
   font-size: 22px;
   margin-bottom: 20px;
   text-align: center;
+
 }
 
 .controles{
@@ -65,7 +66,7 @@
   @media query {
     (max-whidth:480px){
       container{
-        width: 100%;    
+        width: 100%;
 
     }
   }

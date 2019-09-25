@@ -5,6 +5,7 @@ footer{
 
 
 }
+
 footer div.divLogo{
   text-align: center;
   background-color:#f52f41;
@@ -50,10 +51,4 @@ div.menu-footer ul li{
   margin-top:5px;
   width: 100%;
 
-}
-@media (min-width:768px) {
-footer ul li a{
-  color:blue;
-
-}
 }
