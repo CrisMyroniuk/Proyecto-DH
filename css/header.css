@@ -2,11 +2,13 @@
   padding: 0;
   margin:0;
   box-sizing: border-box;
+  font-family: 'Michroma', sans-serif;
 }
 
 header{
   width: 100%;
   background-color: white;
+  border-bottom:3px solid #007bff;
 
 }
 header h1{
