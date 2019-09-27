@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+div.row div ul li{
+  
+}
 
 div.container-fluid{
 background-color:rgb(238, 238, 238);
@@ -36,7 +38,7 @@ div.row ul li{
   text-align: left;
   padding-left: 20px;
   padding-right: 20px;
-  background-color:black;
+  background-color:lightseagreen!important;
 
 }
 
