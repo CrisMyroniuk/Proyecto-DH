@@ -62,10 +62,14 @@
 
 }
 
-  @media query {
-    (max-whidth:480px){
-      container{
-        width: 100%;    
-
-    }
+@media (max-width:760px){
+  .container{
+    width: 100%;
+    margin-top: 0;
+    
   }
+
+
+
+
+}
