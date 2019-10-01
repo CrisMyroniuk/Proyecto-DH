@@ -1,59 +1,74 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
 footer{
-
-  background-color:#f52f41;
-  color:white;
-
-
+background-color:#007bff;
 }
-footer div.divLogo{
-  text-align: center;
-  background-color:#f52f41;
-}
-footer div.divMenu{
-  text-align:center;
-  background-color:#f52f41;
 
-}
-footer ul{
-
-}
 footer div.img-logo{
-
-  text-align: center;
-
-}
-footer div.img-logo img{
-  width: 200px;
-}
-footer div.divCopi{
-  text-align: center;
-  background-color:black;
-}
-div.menu-footer ul li{
-  margin-right: 20px;
-  padding: 6px;
   width: 100%;
-}
-footer ul li a{
-  color:white;
-}
-footer ul li a:hover{
-  text-decoration: none;
-  color:white;
+
+  text-align: center;
 
 }
-
-
-div.menu-footer ul li{
-  list-style: none;
+footer div.menu-footer{
+  width: 100%;
+  margin-bottom: 30px;
+}
+footer div.menu-footer ul{
+margin:10px;
+}
+footer div.menu-footer ul li{
+  padding: 5px;
+  margin:10px;
   border:1px solid white;
-  margin-top:5px;
+
+  list-style: none;
+  text-decoration:none;
+  text-align:center;
+
+}
+footer div.menu-footer ul li:hover{
+
+
+}
+footer div.menu-footer ul li a:hover{
+text-decoration: none;
+}
+footer div.menu-footer ul li a{
+  color:white;
+
+}
+footer div.menu-footer ul li i{
+  color:white;
+}
+footer div.copyright{
+  background-color:black;
+  text-align: center;
+}
+footer div.copyright{
+  color:white;
+}
+footer div.img-logo a img{
+  width: 250px;
+}
+@media(min-width:1024px){
+  footer div.img-logo{
+    width: 50%;
+    display:inline-block;
+    text-align: center;
+
+  }
+  footer div.menu-footer{
+    width: 50%;
+    float:right;
+    margin-top:26px;
+
+
+  }
+  footer div.menu-footer ul li a{
   width: 100%;
-
-}
-@media (min-width:768px) {
-footer ul li a{
-  color:blue;
-
-}
+  }
 }

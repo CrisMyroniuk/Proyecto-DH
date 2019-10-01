@@ -2,71 +2,47 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>BUZOS</title>
+    <title>DIGITAL SPORT</title>
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-    <div class="contenedor">
-      <header>
-      <input type="checkbox" id="menu">
-      <label for="menu"><img src="img/menu.svg" alt=""></label>
-     <nav class="menu">
-       <ul>
-         <li><a href="remeras.html">Remeras</a></li>
-         <li><a href="pantalon.html">Pantalones</a></li>
-         <li><a href="zapatillas.html">Zapatillas</a></li>
-         <li><a href="buzos.html">Buzos</a></li>
-         <li><a href="contacto.html">CONTACTO</a></li>
-
-       </ul>
-
-     </nav>
-
-     <button type="button" name="button"> <a href="login.html"> <img src="img/logearse.svg" alt=""> </a> </button>
-     <button type="button" name="button"> <a href="perfil.html"> <img src="img/login.svg" alt=""> </a> </button>
-     <button type="button" name="button"> <a href="miscompras.html"> <img src="img/carrito.svg" alt=""> </a> </button>
-
-    </header>
-  </div>
+    <?php //incluyo el header:
+    require_once('header.php');  ?>
 
    <div id="container">
 
-              <img class="banner" src="https://1159490.v1.pressablecdn.com/wp-content/uploads/Nike-Apparel_Banner.jpg" alt="100">
+              <img class="banner" src="http://www.appliedfx.co.uk/wp-content/uploads/2019/03/Appliedfx-Sports-Banner1.jpg" alt="100">
             </div>
 
-
-
-
-
     <div id="main">
-      <h1>BUZOS</h1>
+      <h1>REMERAS</h1>
       <div class="row">
 
       <div class="col-xs-12 col-md-6 col-lg-4">
-           <a href="producto.html"><img class="zoom" src="img/buzo01.jpg" alt=""></a>
+           <a href="producto.php"><img class="zoom" src="img/remera.jpg" alt=""></a>
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat</p>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-          <a href="producto.html"><img class="zoom" src="img/buzo01.jpg" alt=""></a>
+          <a href="producto.php"><img class="zoom" src="img/remera.jpg" alt=""></a>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat non</p>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-           <a href="producto.html"><img class="zoom" src="img/buzo01.jpg" alt=""></a>
+           <a href="producto.php"><img class="zoom" src="img/remera.jpg" alt=""></a>
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidat</p>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-           <a href="producto.html"><img class="zoom" src="img/buzo01.jpg" alt=""></a>
+           <a href="producto.php"><img class="zoom" src="img/remera.jpg" alt=""></a>
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat non proident</p>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-           <a href="producto.html"><img class="zoom" src="img/buzo01.jpg" alt=""></a>
+           <a href="producto.php"><img class="zoom" src="img/remera.jpg" alt=""></a>
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat non proident</p>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-           <a href="producto.html"><img class="zoom" src="img/buzo01.jpg" alt=""></a>
+           <a href="producto.php"><img class="zoom" src="img/remera.jpg" alt=""></a>
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat non proident</p>
       </div>
 
@@ -74,10 +50,7 @@
 
     </div>
 
-  <div id="footer">
-      <h3>TIENDA ® 2019.</h3>
-      <p>Todos los derechos reservados</p>
-  </div>
+    <?php require_once('footer.html'); ?>
 
 
 

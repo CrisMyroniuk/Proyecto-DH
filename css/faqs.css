@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+div.row div ul li{
+  
+}
 
 div.container-fluid{
 background-color:rgb(238, 238, 238);
@@ -36,6 +38,7 @@ div.row ul li{
   text-align: left;
   padding-left: 20px;
   padding-right: 20px;
+  background-color:lightseagreen!important;
 
 }
 
@@ -56,8 +59,8 @@ div ul li:hover{
   background-color:rgba(69, 72, 74, 0.39);
 }
 
-div ul li a{
-  color:black;
+div.row ul li a{
+  color:white;
   text-decoration: none;
   font-family: "ProximaNova", Arial, Helvetica, sans-serif;
   font-size: 11px;

@@ -2,30 +2,15 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>DIGITAL SPORT</title>
     <link rel="stylesheet" href="css/faqs.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+
   </head>
   <body>
-    <header>
-      <input type="checkbox" id="menu">
-     <label for="menu"><img src="img/menu.svg" alt=""></label>
-    <nav class="menu">
-      <ul>
-        <li><a href="remeras.html">Remeras</a></li>
-        <li><a href="pantalon.html">Pantalones</a></li>
-        <li><a href="zapatillas.html">Zapatillas</a></li>
-        <li><a href="buzos.hmtl">Buzos</a></li>
-        <li><a href="index.html">INICIO</a></li>
-      </ul>
-    </nav>
-    <button type="button" name="button"> <a href="perfil.html"> <img src="img/login.svg" alt=""> </a> </button>
-    <button type="button" name="button"> <a href="miscompras.html"> <img src="img/carrito.svg" alt=""> </a> </button>
-    <button type="button" name="button"> <a href="login.html"> <img src="img/logearse.svg" alt=""> </a> </button>
-    </header>
-
+    <?php //incluyo el header:
+    require_once('header.php');  ?>
 
 <div class="container-fluid">
 
@@ -36,22 +21,22 @@
 <div class="row">
   <div id="lista" class="col-sm-12 col-md-4 col-lg-3 offset-lg-1">
     <ul>
-      <li><a class="menuFaqs" href="#">COMPRA</a></li>
-      <li><a class="menuFaqs" href="#">ENVIOS</a></li>
-      <li><a class="menuFaqs" href="#">POLITICA DE CAMBIOS Y DEVOLUCIONES PARA COMPRAS REALIZADAS ONLINE</a></li>
+      <li style="background-color:rgba(116, 116, 116, 0.53);margin:5px 0px"><a class="menuFaqs" href="#">COMPRA</a></li>
+      <li style="background-color:rgba(116, 116, 116, 0.53);margin:5px 0px"><a class="menuFaqs" href="#">ENVIOS</a></li>
+      <li style="background-color:rgba(116, 116, 116, 0.53);margin:5px 0px"><a class="menuFaqs" href="#">POLITICA DE CAMBIOS Y DEVOLUCIONES PARA COMPRAS REALIZADAS ONLINE</a></li>
 
     </ul>
   </div>
   <div class="col-sm-12 col-md-8 col-lg-7">
     <h2>COMPRA</h2>
-    <h4>Pregunta1</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <h4>Pregunta2</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <h4>Pregunta3</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <h4>Pregunta4</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h4>CÓMO COMPRAR?</h4>
+    <p>Para comenzar recomendamos que te registres ingresando al icono que se encuentra arriba a la derecha en la Home.Mira nuestro catálogo de productos, elegí lo que más te guste teniendo en cuenta las características (talle y color), cantidad y agrégalos al carrito de compra.Una vez que hayas elegido todos los productos deberás proceder al pago de los mismos. Finalmente quedará completar los datos que te vamos solicitando y seleccionar método de pago.</p>
+    <h4>CUÁL ES MI TALLE?</h4>
+    <p>Los talles de las prendas están especificados en la descripción de cada artículo. Para saber cuál es el talle correcto que buscas, consulta la tabla de talles.</p>
+    <h4>ES SEGURO COMPRAR EN DIGITAL SPORT?</h4>
+    <p>Si es seguro ya que ni tus datos personales, como tampoco el contenido de tu pedido será compartido ni divulgados bajo ningún concepto,Estos datos no serán utilizados para otros fines, más que para el procesamiento de sus pedido</p>
+    <h4>ES SEGURO INGRESAR LOS DATOS DE MI TARJETA DE CRÉDITO?</h4>
+    <p>Sí es seguro ingresar los datos de tu tarjeta de crédito. Entendemos que la seguridad de tu información personal es de suma importancia para cada usuario.</p>
   </div>
 
 </div>
