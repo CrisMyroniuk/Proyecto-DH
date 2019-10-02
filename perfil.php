@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<?php
+session_start();
+$nombre='';
+if(!empty($_SESSION)){
+
+  $nombre=$_SESSION['nombres'];
+
+}
+ ?>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -11,10 +20,12 @@
   <body>
 
     <?php //incluyo el header:
-    require_once('header.php');  ?>
+    require_once('header.php');
+
+    ?>
 
     <div id="container">
-      <h1>MI CUENTA</h1>
+      <h1>Bienvenido <?=$nombre; ?></h1>
       <div class="row">
       <div id="nav" class="col-xs-12 col-md-2 col-lg-2">
           <div>
@@ -48,7 +59,7 @@
       </div>
 
       <?php
-      require_once('footer.html'); ?>
+      require_once('footer.php'); ?>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
