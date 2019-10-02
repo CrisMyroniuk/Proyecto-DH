@@ -6,12 +6,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/registro.css">
     <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
-<<<<<<< HEAD
+
     <title>Formulario Registro</title>
   </head>
   <body>
 
-=======
     <title>DIGITAL SPORT</title>
   </head>
   <body>
@@ -19,15 +18,15 @@
     <?php //incluyo el header:
     require_once('header.php');  ?>
 
->>>>>>> 1b892b4e5319dab36e4f0f6df013e2a8a5bf4345
+
     <div class="container">
       <h4>Iniciar Sesión</h4>
       <input class="controles" type="email" name="correo" value="" placeholder="Ingrese su correo electronico">
       <input class="controles" type="password" name="contraseña" value="" placeholder="Ingrese su contraseña">
       <p>Estoy de acuerdo con <a href="#">Términos y Condiciones</a>  </p>
-      <button class="boton" type="button"  class="btn btn-secondary btn-sm"><a href="index.html">Login</a></button>
+      <button class="boton" type="button"  class="btn btn-secondary btn-sm"><a href="index.php">Login</a></button>
       <p>¿No tienes cuenta? <a class="link" href="registro.php">Registrate</a></a> </p>
-<<<<<<< HEAD
+
 
 
 
@@ -36,13 +35,13 @@
 
     </div>
 
-=======
+
     </div>
 
     <?php
     //incluyo el footer:
     require_once('footer.html'); ?>
->>>>>>> 1b892b4e5319dab36e4f0f6df013e2a8a5bf4345
+
 
 
 

@@ -9,7 +9,7 @@ if($_POST) {
   $errorNombre="";
   $errorMail="";
   $errorContraseña;
-$nombre=$_POST['nombres'];
+  $nombre=$_POST['nombres'];
   $apellido=$_POST['apellido'];
   $email=$_POST['correo'];
   $password=$_POST['pass'];
@@ -71,14 +71,13 @@ header("location:login.php");
         <input class="controles" type="email" name="correo" value="<?php echo $email ?>" placeholder="Ingrese su correo electronico">
         <input class="controles" type="password" name="pass" value="" placeholder="Ingrese su contraseña">
         <input class="controles" type="password" name="confirmacion" value="" placeholder="Vuelva a ingresar su contraseña">
-        <p>Estoy de acuerdo con <a href="#">Términos y Condiciones</a>  </p>
-<<<<<<< HEAD
+
+
         <button class="boton" type="submit" class="btn btn-secondary btn-sm">Registrar</a></button>
-        <p>¿Ya estás registrado? <a class="link" href="login.html">Iniciar sesión</a></a> </p>
-=======
-        <button class="boton" type="submit" class="btn btn-secondary btn-sm"><a href="login.html">Registrar</a></button>
         <p>¿Ya estás registrado? <a class="link" href="login.php">Iniciar sesión</a></a> </p>
->>>>>>> 1b892b4e5319dab36e4f0f6df013e2a8a5bf4345
+
+
+
       </form>
 
     </div>
