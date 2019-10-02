@@ -70,7 +70,7 @@
      var_dump($usuarios);
      $json=json_encode($usuarios);
      FILE_PUT_CONTENTS('usuario.json',$json);
-     header('location:index.php');
+     header('location:login.php');
       }
 }
 ?>
