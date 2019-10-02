@@ -5,6 +5,7 @@
 }
 footer{
 background-color:#007bff;
+margin-top:20px;
 }
 
 footer div.img-logo{
@@ -21,9 +22,10 @@ footer div.menu-footer ul{
 margin:10px;
 }
 footer div.menu-footer ul li{
+  border-bottom:1px solid white;
   padding: 5px;
   margin:10px;
-  border-bottom:1px solid black;
+
   list-style: none;
   text-decoration:none;
   text-align:center;
