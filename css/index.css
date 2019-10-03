@@ -49,6 +49,7 @@ div.dividor{
 img.zoom:hover{
   transform:scale(1.1);
 }
+
 @media(min-width:768px){
   div.dividor{
     display:none;
