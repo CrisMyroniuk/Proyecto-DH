@@ -3,7 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+div.modificar-Datos button span{
+  font-size: 15px;
+}
 header{
   position: fixed;
   z-index: 10;

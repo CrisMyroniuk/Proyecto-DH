@@ -26,6 +26,7 @@ if(!empty($_SESSION)){
     ?>
 
     <div id="container">
+
       <h1>Bienvenido <?=$nombre; ?></h1>
       <div class="row">
       <div id="nav" class="col-xs-12 col-md-2 col-lg-2">
@@ -36,6 +37,10 @@ if(!empty($_SESSION)){
                 <li><a href="#pedidos">Pedidos</a></li>
                 <li><a href="#favoritos">Favoritos</a></li>
              </ul>
+             <div class="modificar-Datos">
+               <button id="modificar" type="button" class="btn btn-primary btn-lg btn-block"><i class="fas fa-edit"></i> <span>MODIFICAR DATOS</span></button>
+
+             </div>
          </div>
        </div>
 
@@ -56,6 +61,7 @@ if(!empty($_SESSION)){
                <h3>Favoritos</h3>
                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
              </div>
+
         </div>
       </div>
 
