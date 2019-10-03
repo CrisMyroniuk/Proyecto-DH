@@ -17,22 +17,9 @@
 
      <nav class="menu">
        <ul>
-         <li><a href="remeras.php">Remeras</a></li>
-         <li><a href="pantalon.php">Pantalones</a></li>
-         <li><a href="zapatillas.php">Zapatillas</a></li>
-         <li><a href="buzos.php">Buzos</a></li>
-         <li><a href="musculosas.php">musculosas</a></li>
-         <li><a href="accesorios.php">Accesorios</a></li>
-         <li><a href="contacto.php">CONTACTO</a></li>
-         <li><a href="faqs.php">FAQS</a></li>
-<<<<<<< HEAD
-
          <li><a href="perfil.php">PERFIL</a></li>
 
-
-=======
          <?php if(empty($_SESSION)){ ?>
->>>>>>> 65479a2d7e8b5e2c95369a7a1b659c992d8c156d
          <li><a href="registro.php">REGISTRO</a></li>
          <li><a href="login.php">LOGIN</a></li>
        <?php } ?>

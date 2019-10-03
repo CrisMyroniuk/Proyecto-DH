@@ -1,131 +1,84 @@
 <?php
-<<<<<<< HEAD
-require_once('Funciones/FunRegistro.php');
-crearUsuario();
-$errorMail="";
-$errorNombre="";
-$errorContraseña="";
-$errorconfirmacion="";
-$errorApellido="";
-$nombre="";
-$email="";
-$apellido="";
-if($_POST) {
-
-$nombre=$_POST['nombres'];
-  $apellido=$_POST['apellido'];
-  $email=$_POST['correo'];
-  $password=$_POST['pass'];
-  $confirmar=$_POST['confirmacion'];
 
 
 
-  if ($nombre=="") {
-    $errorNombre="El nombre no puede estar vacio";
-  }
-  if ($apellido=="") {
-    $errorApellido="El apellido no puede estar vacio";
-  } if ($email=="") {
-    $errorMail="Ingresa el email";
-  }else {
-  if (!filter_Var($email,FILTER_VALIDATE_EMAIL)) {
-   $errorMail="El email no es valido";
-    }
-  }
-  if ($password=="") {
-    $errorContraseña= "La contraseña no puede estar vacia";
-}else{
-  if (strlen($password)<6) {
-     $errorContraseña="La contraseña debe tener al menos 6 caracteres";
-  }
-}
-    if ($password!==$confirmar) {
-      $errorconfirmacion="Las contraseñas no coinciden";
-}
-if (empty($errorMail)&&empty($errorNombre)&& empty($errorContraseña)&& empty($errorApellido)&&empty($errorconfirmacion)) {
+$usuario=[
+  'nombres' => '',
+  'email'=> '',
+  'apellido' => '',
+  'password' => '',
+  'confirmacion' => '',
+];
 
-header("location:login.php");
-}
-}
+$errores=[];
+$errorEmail='';
+if($_POST){
 
- ?>
-=======
-  $usuario=[
-    'nombres' => '',
-    'email'=> '',
-    'apellido' => '',
-    'password' => '',
-    'confirmacion' => '',
-  ];
+   if($_POST['nombres']!=''){
+     $usuario['nombres'] = $_POST['nombres'];
+   }
+   else{
+     $errores[]="Ingrese Nombre";
+   }
+   if($_POST['apellido']!=''){
+     $usuario['apellido'] = $_POST['apellido'];
+   }
+   else{
+     $errores[]="Ingrese Apellido";
+   }
+   if($_POST['email']!=''){
 
-  $errores=[];
-  $errorEmail='';
- if($_POST){
+     $usuario['email'] = $_POST['email'];
+     //VER QUE EL EMAIL NO SE ENCUENTRE YA REGISTRADO, SINO ENVIAR OTRO ERROR "EL EMAIL YA SE ENCUENTRA REGISTRADO"
 
-     if($_POST['nombres']!=''){
-       $usuario['nombres'] = $_POST['nombres'];
-     }
-     else{
-       $errores[]="Ingrese Nombre";
-     }
-     if($_POST['apellido']!=''){
-       $usuario['apellido'] = $_POST['apellido'];
-     }
-     else{
-       $errores[]="Ingrese Apellido";
-     }
-     if($_POST['email']!=''){
+     $archivo=FILE_GET_CONTENTS('usuario.json');
+     $usuarios=json_decode($archivo,true);
+     foreach($usuarios as $emailRegistrado){
+       if($emailRegistrado['email']==$usuario['email']){
+         $errorEmail='El email ya se encuentra registrado';
 
-       $usuario['email'] = $_POST['email'];
-       //VER QUE EL EMAIL NO SE ENCUENTRE YA REGISTRADO, SINO ENVIAR OTRO ERROR "EL EMAIL YA SE ENCUENTRA REGISTRADO"
-
-       $archivo=FILE_GET_CONTENTS('usuario.json');
-       $usuarios=json_decode($archivo,true);
-       foreach($usuarios as $emailRegistrado){
-         if($emailRegistrado['email']==$usuario['email']){
-           $errorEmail='El email ya se encuentra registrado';
-
-         }
        }
-
      }
-     else {
-       $errores[]="Ingrese email";
-     }
-    if($_POST['password']!=''){
-      $usuario['password'] = $_POST['password'];
-    }
-    else {
-     $errores[]="Ingrese contraseña";
-    }
-    if($_POST['confirmacion']!=''){
-      $usuario['confirmacion'] = $_POST['confirmacion'];
-    }
-    else {
-      $errores[]= "Confirme contraseña";
-    }
-    if($_POST['password'] != $_POST['confirmacion']){
-      $errores[]="Las contraseñas no coinciden";
-    }
-    if(empty($errores) && empty($errorEmail)){
-      echo "Todo está correcto";
-     //si salio todo bien redirecciono y guardo en un json
-     $hash1=password_hash($usuario['password'],PASSWORD_DEFAULT);
-     $hash2=password_hash($usuario['confirmar'],PASSWORD_DEFAULT);
-     $usuario['password']=$hash1;
-     $usuario['confirmacion']=$hash2;
 
-     //Guardo en json mi usuario, lo codifico en json denuevo y lo subo:
+   }
+   else {
+     $errores[]="Ingrese email";
+   }
+  if($_POST['password']!=''){
+    $usuario['password'] = $_POST['password'];
+  }
+  else {
+   $errores[]="Ingrese contraseña";
+  }
+  if($_POST['confirmacion']!=''){
+    $usuario['confirmacion'] = $_POST['confirmacion'];
+  }
+  else {
+    $errores[]= "Confirme contraseña";
+  }
+  if($_POST['password'] != $_POST['confirmacion']){
+    $errores[]="Las contraseñas no coinciden";
+  }
+  if(empty($errores) && empty($errorEmail)){
+    echo "Todo está correcto";
+   //si salio todo bien redirecciono y guardo en un json
+   $hash1=password_hash($usuario['password'],PASSWORD_DEFAULT);
+   $hash2=password_hash($usuario['confirmar'],PASSWORD_DEFAULT);
+   $usuario['password']=$hash1;
+   $usuario['confirmacion']=$hash2;
 
-     $usuarios[] = $usuario;
-     var_dump($usuarios);
-     $json=json_encode($usuarios);
-     FILE_PUT_CONTENTS('usuario.json',$json);
-     header('location:login.php');
-      }
+   //Guardo en json mi usuario, lo codifico en json denuevo y lo subo:
+
+   $usuarios[] = $usuario;
+   var_dump($usuarios);
+   $json=json_encode($usuarios);
+   FILE_PUT_CONTENTS('usuario.json',$json);
+   header('location:login.php');
+    }
 }
-?>
->>>>>>> 65479a2d7e8b5e2c95369a7a1b659c992d8c156d
+ ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -157,41 +110,11 @@ header("location:login.php");
     }
       ?>
       <form class="" action="registro.php" method="post" enctype="multipart/form-data">
-<<<<<<< HEAD
-        <?php echo $errorNombre; ?>
-        <input class="controles" type="text" name="nombres" value="<?php echo $nombre; ?>" placeholder="Ingrese su nombre">
-        <?php echo $errorApellido; ?>
-        <input class="controles" type="text" name="apellido" value="<?php echo $apellido; ?>" placeholder="Ingrese su apellido">
-        <?php echo $errorMail; ?>
-        <input class="controles" type="email" name="correo" value="<?php echo $email; ?>" placeholder="Ingrese su correo electronico">
-          <?php echo $errorContraseña; ?>
-        <input class="controles" type="password" name="pass" value="" placeholder="Ingrese su contraseña">
-          <?php echo $errorconfirmacion; ?>
-        <input class="controles" type="password" name="confirmacion" value="" placeholder="Vuelva a ingresar su contraseña">
-
-
-        <button class="boton" type="submit" class="btn btn-secondary btn-sm">Registrar</a></button>
-        <p> Ya estás registrado? <a class="link" href="login.php">Iniciar sesión</a></a> </p>
-
-
-
-      </form>
-
-    </div>
-
-    <?php require_once('footer.html'); ?>
-
-
-
-
-=======
         <input class="controles" type="text" name="nombres" value="<?php echo $usuario['nombres']; ?>" placeholder="Ingrese su nombre">
         <input class="controles" type="text" name="apellido" value="<?php echo $usuario['apellido']; ?>" placeholder="Ingrese su apellido">
         <input class="controles" type="email" name="email" value="<?php echo $usuario['email']; ?>" placeholder="Ingrese su correo electronico">
         <input class="controles" type="password" name="password" value="" placeholder="Ingrese su contraseña">
         <input class="controles" type="password" name="confirmacion" value="" placeholder="Vuelva a ingresar su contraseña">
->>>>>>> 65479a2d7e8b5e2c95369a7a1b659c992d8c156d
-
         <button class="boton" type="submit" class="btn btn-secondary btn-sm">Registrar</a></button>
         <p>Ya estás registrado? <a class="link" href="login.php">Iniciar sesión</a></a> </p>
 
@@ -200,6 +123,8 @@ header("location:login.php");
       </form>
 
     </div>
+
+
 
     <?php require_once('footer.php'); ?>
 

@@ -1,9 +1,4 @@
 
-
-<!DOCTYPE html>
-<<<<<<< HEAD
-
-=======
 <?php
 session_start();
 $nombre='';
@@ -13,7 +8,7 @@ if(!empty($_SESSION)){
 
 }
  ?>
->>>>>>> 65479a2d7e8b5e2c95369a7a1b659c992d8c156d
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
