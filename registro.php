@@ -82,6 +82,7 @@ if($_POST){
    FILE_PUT_CONTENTS('usuario.json',$json);
    header('location:login.php');
     }
+
 }
  ?>
 
