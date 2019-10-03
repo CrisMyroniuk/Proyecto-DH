@@ -63,6 +63,8 @@ session_start();
     <title>Login</title>
   </head>
   <body>
+    <?php //incluyo el header:
+    require_once('header.php');  ?>
 
     <div class="container">
       <h4>Iniciar Sesión</h4>
