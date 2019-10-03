@@ -10,6 +10,7 @@
   </head>
   <body>
     <?php //incluyo el header:
+    session_start();
     require_once('header.php');  ?>
 
 <div class="container-fluid">
@@ -21,9 +22,9 @@
 <div class="row">
   <div id="lista" class="col-sm-12 col-md-4 col-lg-3 offset-lg-1">
     <ul>
-      <li style="background-color:rgba(116, 116, 116, 0.53);margin:5px 0px"><a class="menuFaqs" href="#">COMPRA</a></li>
-      <li style="background-color:rgba(116, 116, 116, 0.53);margin:5px 0px"><a class="menuFaqs" href="#">ENVIOS</a></li>
-      <li style="background-color:rgba(116, 116, 116, 0.53);margin:5px 0px"><a class="menuFaqs" href="#">POLITICA DE CAMBIOS Y DEVOLUCIONES PARA COMPRAS REALIZADAS ONLINE</a></li>
+      <li style="margin:5px 0px"><a class="menuFaqs" href="#">COMPRA</a></li>
+      <li style="margin:5px 0px"><a class="menuFaqs" href="#">ENVIOS</a></li>
+      <li style="margin:5px 0px"><a class="menuFaqs" href="#">POLITICA DE CAMBIOS Y DEVOLUCIONES PARA COMPRAS REALIZADAS ONLINE</a></li>
 
     </ul>
   </div>
@@ -42,7 +43,7 @@
 </div>
 
 </div>
-<?php require_once('footer.html'); ?>
+<?php require_once('footer.php'); ?>
 
 
 

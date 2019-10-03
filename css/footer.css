@@ -2,9 +2,12 @@
   margin:0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+
 }
 footer{
 background-color:#007bff;
+margin-top:20px;
 }
 
 footer div.img-logo{
@@ -21,9 +24,10 @@ footer div.menu-footer ul{
 margin:10px;
 }
 footer div.menu-footer ul li{
+  border-bottom:1px solid white;
   padding: 5px;
   margin:10px;
-  border:1px solid white;
+  margin-bottom:10px;
 
   list-style: none;
   text-decoration:none;
@@ -39,6 +43,7 @@ text-decoration: none;
 }
 footer div.menu-footer ul li a{
   color:white;
+  text-decoration: none;
 
 }
 footer div.menu-footer ul li i{
@@ -54,6 +59,7 @@ footer div.copyright{
 footer div.img-logo a img{
   width: 250px;
 }
+
 @media(min-width:1024px){
   footer div.img-logo{
     width: 50%;

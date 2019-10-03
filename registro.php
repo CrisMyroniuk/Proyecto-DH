@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 require_once('Funciones/FunRegistro.php');
 crearUsuario();
 $errorMail="";
@@ -48,6 +49,83 @@ header("location:login.php");
 }
 
  ?>
+=======
+  $usuario=[
+    'nombres' => '',
+    'email'=> '',
+    'apellido' => '',
+    'password' => '',
+    'confirmacion' => '',
+  ];
+
+  $errores=[];
+  $errorEmail='';
+ if($_POST){
+
+     if($_POST['nombres']!=''){
+       $usuario['nombres'] = $_POST['nombres'];
+     }
+     else{
+       $errores[]="Ingrese Nombre";
+     }
+     if($_POST['apellido']!=''){
+       $usuario['apellido'] = $_POST['apellido'];
+     }
+     else{
+       $errores[]="Ingrese Apellido";
+     }
+     if($_POST['email']!=''){
+
+       $usuario['email'] = $_POST['email'];
+       //VER QUE EL EMAIL NO SE ENCUENTRE YA REGISTRADO, SINO ENVIAR OTRO ERROR "EL EMAIL YA SE ENCUENTRA REGISTRADO"
+
+       $archivo=FILE_GET_CONTENTS('usuario.json');
+       $usuarios=json_decode($archivo,true);
+       foreach($usuarios as $emailRegistrado){
+         if($emailRegistrado['email']==$usuario['email']){
+           $errorEmail='El email ya se encuentra registrado';
+
+         }
+       }
+
+     }
+     else {
+       $errores[]="Ingrese email";
+     }
+    if($_POST['password']!=''){
+      $usuario['password'] = $_POST['password'];
+    }
+    else {
+     $errores[]="Ingrese contraseña";
+    }
+    if($_POST['confirmacion']!=''){
+      $usuario['confirmacion'] = $_POST['confirmacion'];
+    }
+    else {
+      $errores[]= "Confirme contraseña";
+    }
+    if($_POST['password'] != $_POST['confirmacion']){
+      $errores[]="Las contraseñas no coinciden";
+    }
+    if(empty($errores) && empty($errorEmail)){
+      echo "Todo está correcto";
+     //si salio todo bien redirecciono y guardo en un json
+     $hash1=password_hash($usuario['password'],PASSWORD_DEFAULT);
+     $hash2=password_hash($usuario['confirmar'],PASSWORD_DEFAULT);
+     $usuario['password']=$hash1;
+     $usuario['confirmacion']=$hash2;
+
+     //Guardo en json mi usuario, lo codifico en json denuevo y lo subo:
+
+     $usuarios[] = $usuario;
+     var_dump($usuarios);
+     $json=json_encode($usuarios);
+     FILE_PUT_CONTENTS('usuario.json',$json);
+     header('location:login.php');
+      }
+}
+?>
+>>>>>>> 65479a2d7e8b5e2c95369a7a1b659c992d8c156d
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -64,7 +142,22 @@ header("location:login.php");
 
     <div class="container">
       <h4>Formulario de Registro</h4>
+      <?php
+      if(!empty($errores) && empty($errorEmail)){
+        foreach($errores as $error => $mensaje){
+          echo $mensaje;
+          echo '<br>';
+      }
+      echo '<br>';
+    }
+    else {
+      if($errorEmail!=''){
+        echo $errorEmail;
+      }
+    }
+      ?>
       <form class="" action="registro.php" method="post" enctype="multipart/form-data">
+<<<<<<< HEAD
         <?php echo $errorNombre; ?>
         <input class="controles" type="text" name="nombres" value="<?php echo $nombre; ?>" placeholder="Ingrese su nombre">
         <?php echo $errorApellido; ?>
@@ -91,12 +184,24 @@ header("location:login.php");
 
 
 
+=======
+        <input class="controles" type="text" name="nombres" value="<?php echo $usuario['nombres']; ?>" placeholder="Ingrese su nombre">
+        <input class="controles" type="text" name="apellido" value="<?php echo $usuario['apellido']; ?>" placeholder="Ingrese su apellido">
+        <input class="controles" type="email" name="email" value="<?php echo $usuario['email']; ?>" placeholder="Ingrese su correo electronico">
+        <input class="controles" type="password" name="password" value="" placeholder="Ingrese su contraseña">
+        <input class="controles" type="password" name="confirmacion" value="" placeholder="Vuelva a ingresar su contraseña">
+>>>>>>> 65479a2d7e8b5e2c95369a7a1b659c992d8c156d
+
+        <button class="boton" type="submit" class="btn btn-secondary btn-sm">Registrar</a></button>
+        <p>Ya estás registrado? <a class="link" href="login.php">Iniciar sesión</a></a> </p>
 
 
 
+      </form>
 
+    </div>
 
-
+    <?php require_once('footer.php'); ?>
 
 
 

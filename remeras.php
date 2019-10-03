@@ -5,44 +5,46 @@
     <title>DIGITAL SPORT</title>
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/productos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
     <?php //incluyo el header:
+    session_start();
     require_once('header.php');  ?>
 
-   <div id="container">
 
-              <img class="banner" src="http://www.appliedfx.co.uk/wp-content/uploads/2019/03/Appliedfx-Sports-Banner1.jpg" alt="100">
-            </div>
 
     <div id="main">
-      <h1>REMERAS</h1>
+      <div class="titulo">
+        <h1>REMERAS</h1>
+      </div>
+
       <div class="row">
 
       <div class="col-xs-12 col-md-6 col-lg-4">
-           <a href="producto.php"><img class="zoom" src="img/remera.jpg" alt=""></a>
+           <a href="producto.php"><img class="foto" class="zoom" src="img/Remeras/Remera1.jpg" alt=""></a>
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat</p>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-          <a href="producto.php"><img class="zoom" src="img/remera.jpg" alt=""></a>
+          <a href="producto.php"><img class="foto" class="zoom" src="img/Remeras/Remera2.jpg" alt=""></a>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat non</p>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-           <a href="producto.php"><img class="zoom" src="img/remera.jpg" alt=""></a>
+           <a href="producto.php"><img class="foto" class="zoom" src="img/Remeras/Remera3.jpg" alt=""></a>
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidat</p>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-           <a href="producto.php"><img class="zoom" src="img/remera.jpg" alt=""></a>
+           <a href="producto.php"><img class="foto" class="zoom" src="img/Remeras/Remera3.jpg" alt=""></a>
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat non proident</p>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-           <a href="producto.php"><img class="zoom" src="img/remera.jpg" alt=""></a>
+           <a href="producto.php"><img class="foto" class="zoom" src="img/Remeras/Remera2.jpg" alt=""></a>
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat non proident</p>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-           <a href="producto.php"><img class="zoom" src="img/remera.jpg" alt=""></a>
+           <a href="producto.php"><img class="foto" class="zoom" src="img/Remeras/Remera1.jpg" alt=""></a>
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat non proident</p>
       </div>
 
@@ -50,7 +52,7 @@
 
     </div>
 
-    <?php require_once('footer.html'); ?>
+    <?php require_once('footer.php'); ?>
 
 
 

@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "nombre": "Juan",
         "apellido": "",
         "email": "",
@@ -901,5 +902,12 @@
         "email": "",
         "password": "",
         "confirPass": ""
+=======
+        "nombre": "Cristian",
+        "apellido": "Myroniuk",
+        "email": "nahuelmyronds@fdfs.com",
+        "password": "123456",
+        "confirPass": "123456"
+>>>>>>> 65479a2d7e8b5e2c95369a7a1b659c992d8c156d
     }
 ]

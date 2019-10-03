@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 div.row div ul li{
-  
+
 }
 
 div.container-fluid{
@@ -38,7 +38,7 @@ div.row ul li{
   text-align: left;
   padding-left: 20px;
   padding-right: 20px;
-  background-color:lightseagreen!important;
+  background-color:rgba(0, 0, 0, 0.4);
 
 }
 

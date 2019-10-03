@@ -25,20 +25,34 @@
          <li><a href="accesorios.php">Accesorios</a></li>
          <li><a href="contacto.php">CONTACTO</a></li>
          <li><a href="faqs.php">FAQS</a></li>
+<<<<<<< HEAD
 
          <li><a href="perfil.php">PERFIL</a></li>
 
 
+=======
+         <?php if(empty($_SESSION)){ ?>
+>>>>>>> 65479a2d7e8b5e2c95369a7a1b659c992d8c156d
          <li><a href="registro.php">REGISTRO</a></li>
          <li><a href="login.php">LOGIN</a></li>
+       <?php } ?>
+       <?php if(!empty($_SESSION)){ ?>
+         <li><a href="perfil.php">MI PERFIL</a></li>
+         <li><a href="logout.php">CERRAR SESIÓN</a></li>
+       <?php } ?>
 
        </ul>
 
      </nav>
 
-     <button type="button" name="button"> <a href="login.php"> <img  src="img/logearse.svg" alt=""> </a> </button>
-     <button type="button" name="button"> <a href="perfil.php"> <img src="img/login.svg" alt=""> </a> </button>
-     <button type="button" name="button"> <a href="miscompras.php"> <img src="img/carrito.svg" alt=""> </a> </button>
+      <?php  if(empty($_SESSION)){ ?> <button type="button" name="button"> <a href="login.php"> <img  src="img/logearse.svg" alt=""> </a> </button>
+      <?php } ?>
+    <?php if(!empty($_SESSION)) { ?>
+      <button type="button" name="button"> <a href="perfil.php"> <img src="img/login.svg" alt=""> </a> </button>
+      <button type="button" name="button"> <a href="miscompras.php"> <img src="img/carrito.svg" alt=""> </a> </button>
+    <?php } ?>
+
+
 
    </header>
     </div>

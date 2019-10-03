@@ -1,5 +1,5 @@
-<?php
 
+<<<<<<< HEAD
 function crearUsuario(){
   if($_POST){
     $usuarios = [
@@ -19,3 +19,5 @@ function crearUsuario(){
   }
 
 }
+=======
+>>>>>>> 65479a2d7e8b5e2c95369a7a1b659c992d8c156d
