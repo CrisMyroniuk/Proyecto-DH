@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/header.css">
     <link href="https://fonts.googleapis.com/css?family=Michroma&display=swap" rel="stylesheet">
@@ -23,9 +23,12 @@
          <li><a href="buzos.php">Buzos</a></li>
          <li><a href="musculosas.php">musculosas</a></li>
          <li><a href="accesorios.php">Accesorios</a></li>
-         <hr>
          <li><a href="contacto.php">CONTACTO</a></li>
          <li><a href="faqs.php">FAQS</a></li>
+
+         <li><a href="perfil.php">PERFIL</a></li>
+
+
          <li><a href="registro.php">REGISTRO</a></li>
          <li><a href="login.php">LOGIN</a></li>
 

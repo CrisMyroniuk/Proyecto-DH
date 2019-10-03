@@ -1,67 +1,73 @@
 [
     {
-        "nombre": "gaston",
-        "apellido": "estevez",
-        "email": "gaston@digitalhouse.com",
-        "password": "micontrase\u00f1a",
-        "confirPass": "micontrase\u00f1a"
-    },
-    {
-        "nombre": "Cristian",
-        "apellido": "Myroniu",
-        "email": "nahuelmyronds@fdfs.com",
-        "password": "nahuel",
-        "confirPass": "nahuel"
-    },
-    {
-<<<<<<< HEAD
-        "nombre": "",
+        "nombre": "Juan",
         "apellido": "",
         "email": "",
         "password": "",
         "confirPass": ""
     },
     {
-        "nombre": "hvhj",
+        "nombre": "Tito",
         "apellido": "",
         "email": "",
         "password": "",
         "confirPass": ""
     },
     {
-        "nombre": "hvhj",
-        "apellido": "",
+        "nombre": "Tito",
+        "apellido": "Ramos",
         "email": "",
         "password": "",
         "confirPass": ""
     },
     {
-        "nombre": "m mk",
-        "apellido": "",
-        "email": "",
+        "nombre": "Tito",
+        "apellido": "Ramos",
+        "email": "Bocalaconchadetumadre@gmail.com",
+        "password": "1234",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Tito",
+        "apellido": "Ramos",
+        "email": "Bocalaconchadetumadre@gmail.com",
+        "password": "123456",
+        "confirPass": "123456"
+    },
+    {
+        "nombre": "Tito",
+        "apellido": "Ramos",
+        "email": "Bocalaconchadetumadre@gmail.com",
         "password": "",
         "confirPass": ""
     },
     {
-        "nombre": "m mk",
-        "apellido": "",
-        "email": "",
+        "nombre": "Tito",
+        "apellido": "Ramos",
+        "email": "Bocalaconchadetumadre@gmail.com",
         "password": "",
         "confirPass": ""
     },
     {
-        "nombre": "m mk",
-        "apellido": "",
-        "email": "",
+        "nombre": "Tito",
+        "apellido": "Ramos",
+        "email": "Bocalaconchadetumadre@gmail.com",
         "password": "",
         "confirPass": ""
     },
     {
-        "nombre": "",
-        "apellido": "",
-        "email": "",
-        "password": "",
+        "nombre": "Tito",
+        "apellido": "Ramos",
+        "email": "Bocalaconchadetumadre@gmail.com",
+        "password": "123456",
         "confirPass": ""
+    },
+    {
+        "nombre": "Tito",
+        "apellido": "Ramos",
+        "email": "Bocalaconchadetumadre@gmail.com",
+        "password": "123456",
+        "confirPass": "123456"
     },
     {
         "nombre": "",
@@ -87,6 +93,20 @@
     {
         "nombre": "Juan",
         "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "Roson",
         "email": "",
         "password": "",
         "confirPass": ""
@@ -109,6 +129,209 @@
         "nombre": "Juan",
         "apellido": "Roson",
         "email": "camilaroson@hotmail.com",
+        "password": "123456",
+        "confirPass": "123456"
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "jUAN",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "jUAN",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "jUAN",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "jUAN",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "jUAN",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "jUAN",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "Tito",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
         "password": "",
         "confirPass": ""
     },
@@ -118,6 +341,153 @@
         "email": "camilaroson@hotmail.com",
         "password": "",
         "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "Roson",
+        "email": "camilaroson@hotmail.com",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "123456",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "123456",
+        "confirPass": "123456"
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "123",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "1234",
+        "confirPass": "123"
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "1234",
+        "confirPass": "123"
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "12345",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "123456",
+        "confirPass": "123456"
     },
     {
         "nombre": "Juan",
@@ -131,7 +501,7 @@
         "apellido": "Roson",
         "email": "camilaroson@hotmail.com",
         "password": "123456",
-        "confirPass": ""
+        "confirPass": "1234"
     },
     {
         "nombre": "Juan",
@@ -149,72 +519,387 @@
     },
     {
         "nombre": "Juan",
-        "apellido": "RoSON",
+        "apellido": "",
         "email": "",
         "password": "",
         "confirPass": ""
     },
     {
         "nombre": "Juan",
-        "apellido": "RoSON",
-        "email": "CAMIANDAKLDADA@GMAIL.COM",
-        "password": "DFSDF",
-        "confirPass": ""
-    },
-    {
-        "nombre": "Juan",
-        "apellido": "RoSON",
-        "email": "CAMIANDAKLDADA@GMAIL.COM",
+        "apellido": "",
+        "email": "",
         "password": "",
         "confirPass": ""
     },
     {
         "nombre": "Juan",
-        "apellido": "RoSON",
-        "email": "CAMIANDAKLDADA@GMAIL.COM",
+        "apellido": "",
+        "email": "",
         "password": "",
         "confirPass": ""
     },
     {
         "nombre": "Juan",
-        "apellido": "RoSON",
-        "email": "CAMIANDAKLDADA@GMAIL.COM",
+        "apellido": "",
+        "email": "",
         "password": "",
         "confirPass": ""
     },
     {
         "nombre": "Juan",
-        "apellido": "RoSON",
-        "email": "CAMIANDAKLDADA@GMAIL.COM",
+        "apellido": "",
+        "email": "",
         "password": "",
         "confirPass": ""
     },
     {
         "nombre": "Juan",
-        "apellido": "RoSON",
-        "email": "CAMIANDAKLDADA@GMAIL.COM",
+        "apellido": "",
+        "email": "",
         "password": "",
         "confirPass": ""
     },
     {
         "nombre": "Juan",
-        "apellido": "RoSON",
-        "email": "CAMIANDAKLDADA@GMAIL.COM",
+        "apellido": "fasf",
+        "email": "tito@g",
+        "password": "fsdf",
+        "confirPass": "fsdfs"
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "fasf",
+        "email": "tito@g",
         "password": "",
         "confirPass": ""
     },
     {
         "nombre": "Juan",
-        "apellido": "RoSON",
-        "email": "CAMIANDAKLDADA@GMAIL.COM",
+        "apellido": "fasf",
+        "email": "tito@g",
         "password": "",
         "confirPass": ""
-=======
-        "nombre": "lautaro",
-        "apellido": "avila",
-        "email": "lautarojuliann@hotmail.com",
-        "password": "123456",
-        "confirPass": "123456"
->>>>>>> 1b892b4e5319dab36e4f0f6df013e2a8a5bf4345
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "fasf",
+        "email": "tito@g",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Camila",
+        "apellido": "Roson",
+        "email": "camilaroson@hotmail.com",
+        "password": "camila",
+        "confirPass": "camila"
+    },
+    {
+        "nombre": "Camila",
+        "apellido": "Roson",
+        "email": "camilaroson@hotmail.com",
+        "password": "elisaca",
+        "confirPass": "e\u00f1isaca"
+    },
+    {
+        "nombre": "Camila",
+        "apellido": "Roson",
+        "email": "camilaroson@hotmail.com",
+        "password": "elisaca",
+        "confirPass": "elisaca"
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Juan",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Eliseo",
+        "apellido": "Roson",
+        "email": "eliseoroson@hotmail.com",
+        "password": "eliseo",
+        "confirPass": "eliseo"
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Camila",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Camila",
+        "apellido": "Roson",
+        "email": "camilaroson@hotmail.com",
+        "password": "elisaca",
+        "confirPass": "elisaca"
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "camila",
+        "apellido": "roson",
+        "email": "camilaroson@hotmail.com",
+        "password": "elisaca",
+        "confirPass": "elisaca"
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Camila",
+        "apellido": "Roson",
+        "email": "camilaroson@hotmail.com",
+        "password": "elisaca",
+        "confirPass": "elisaca"
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "Tu mama ",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "email": "",
+        "password": "",
+        "confirPass": ""
     }
 ]

@@ -1,14 +1,16 @@
 <?php
 require_once('Funciones/FunRegistro.php');
 crearUsuario();
-
+$errorMail="";
+$errorNombre="";
+$errorContraseña="";
+$errorconfirmacion="";
+$errorApellido="";
 $nombre="";
 $email="";
 $apellido="";
 if($_POST) {
-  $errorNombre="";
-  $errorMail="";
-  $errorContraseña;
+
 $nombre=$_POST['nombres'];
   $apellido=$_POST['apellido'];
   $email=$_POST['correo'];
@@ -18,37 +20,35 @@ $nombre=$_POST['nombres'];
 
 
   if ($nombre=="") {
-    echo $errorNombre="El nombre no puede estar vacio";
-} if ($password=="") {
-echo $errorContraseña= "La contraseña no puede estar vacia";
+    $errorNombre="El nombre no puede estar vacio";
+  }
+  if ($apellido=="") {
+    $errorApellido="El apellido no puede estar vacio";
+  } if ($email=="") {
+    $errorMail="Ingresa el email";
+  }else {
+  if (!filter_Var($email,FILTER_VALIDATE_EMAIL)) {
+   $errorMail="El email no es valido";
+    }
+  }
+  if ($password=="") {
+    $errorContraseña= "La contraseña no puede estar vacia";
 }else{
   if (strlen($password)<6) {
-    echo $errorContraseña="La contraseña debe tener al menos 6 caracteres";
+     $errorContraseña="La contraseña debe tener al menos 6 caracteres";
   }
 }
-if ($apellido=="") {
-  echo $errorNombre="El apellido no puede estar vacio";
-} if ($email=="") {
-    echo $errorMail="Ingresa el email";
-}else {
-  if (!filter_Var($email,FILTER_VALIDATE_EMAIL)) {
-      echo $errorMail="El email no es valido";
-  }
-}if ($password!==$confirmar) {
-echo $errorContraseña="Las contraseñas no coinciden";
+    if ($password!==$confirmar) {
+      $errorconfirmacion="Las contraseñas no coinciden";
 }
-if (empty($errorMail)&&empty($errorNombre)&& empty($errorContraseña)) {
+if (empty($errorMail)&&empty($errorNombre)&& empty($errorContraseña)&& empty($errorApellido)&&empty($errorconfirmacion)) {
+
 header("location:login.php");
 }
 }
 
-
-
-
-
-
  ?>
-?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -65,20 +65,23 @@ header("location:login.php");
     <div class="container">
       <h4>Formulario de Registro</h4>
       <form class="" action="registro.php" method="post" enctype="multipart/form-data">
-        <input class="controles" type="text" name="nombres" value="<?php echo $nombre ?>" placeholder="Ingrese su nombre">
-
-        <input class="controles" type="text" name="apellido" value="<?php echo $apellido ?>" placeholder="Ingrese su apellido">
-        <input class="controles" type="email" name="correo" value="<?php echo $email ?>" placeholder="Ingrese su correo electronico">
+        <?php echo $errorNombre; ?>
+        <input class="controles" type="text" name="nombres" value="<?php echo $nombre; ?>" placeholder="Ingrese su nombre">
+        <?php echo $errorApellido; ?>
+        <input class="controles" type="text" name="apellido" value="<?php echo $apellido; ?>" placeholder="Ingrese su apellido">
+        <?php echo $errorMail; ?>
+        <input class="controles" type="email" name="correo" value="<?php echo $email; ?>" placeholder="Ingrese su correo electronico">
+          <?php echo $errorContraseña; ?>
         <input class="controles" type="password" name="pass" value="" placeholder="Ingrese su contraseña">
+          <?php echo $errorconfirmacion; ?>
         <input class="controles" type="password" name="confirmacion" value="" placeholder="Vuelva a ingresar su contraseña">
-        <p>Estoy de acuerdo con <a href="#">Términos y Condiciones</a>  </p>
-<<<<<<< HEAD
+
+
         <button class="boton" type="submit" class="btn btn-secondary btn-sm">Registrar</a></button>
-        <p>¿Ya estás registrado? <a class="link" href="login.html">Iniciar sesión</a></a> </p>
-=======
-        <button class="boton" type="submit" class="btn btn-secondary btn-sm"><a href="login.html">Registrar</a></button>
-        <p>¿Ya estás registrado? <a class="link" href="login.php">Iniciar sesión</a></a> </p>
->>>>>>> 1b892b4e5319dab36e4f0f6df013e2a8a5bf4345
+        <p> Ya estás registrado? <a class="link" href="login.php">Iniciar sesión</a></a> </p>
+
+
+
       </form>
 
     </div>

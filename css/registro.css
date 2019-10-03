@@ -12,6 +12,7 @@
   padding: 30px;
   margin: auto;
   margin-top: 100px;
+  margin-bottom:100px;
   border-radius: 4px;
   font-family: Manjari;
   color: white;
@@ -60,20 +61,21 @@
 
 }
 
-<<<<<<< HEAD
+
+
 @media (max-width:760px){
   .container{
     width: 100%;
     margin-top: 0;
-    
-=======
+
+
   @media query {
     (max-whidth:480px){
       container{
         width: 100%;
 
     }
->>>>>>> 1b892b4e5319dab36e4f0f6df013e2a8a5bf4345
+
   }
 
 
