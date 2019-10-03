@@ -10,7 +10,14 @@ $usuario=[
   'confirmacion' => '',
 ];
 
-$errores=[];
+$errores=[
+  'nombre' => '',
+  'apellido' => '',
+  'email' =>'',
+  'password' => '',
+  'nocoinciden' => '',
+];
+
 $errorEmail='';
 if($_POST){
 
@@ -18,13 +25,13 @@ if($_POST){
      $usuario['nombres'] = $_POST['nombres'];
    }
    else{
-     $errores[]="Ingrese Nombre";
+     $errores['nombre']="Ingrese Nombre";
    }
    if($_POST['apellido']!=''){
      $usuario['apellido'] = $_POST['apellido'];
    }
    else{
-     $errores[]="Ingrese Apellido";
+     $errores['apellido']="Ingrese Apellido";
    }
    if($_POST['email']!=''){
 
@@ -42,22 +49,22 @@ if($_POST){
 
    }
    else {
-     $errores[]="Ingrese email";
+     $errores['email']="Ingrese email";
    }
   if($_POST['password']!=''){
     $usuario['password'] = $_POST['password'];
   }
   else {
-   $errores[]="Ingrese contraseña";
+   $errores['password']="Ingrese contraseña";
   }
   if($_POST['confirmacion']!=''){
     $usuario['confirmacion'] = $_POST['confirmacion'];
   }
   else {
-    $errores[]= "Confirme contraseña";
+    $errores['confirmar']= "Confirme contraseña";
   }
   if($_POST['password'] != $_POST['confirmacion']){
-    $errores[]="Las contraseñas no coinciden";
+    $errores['nocoinciden']="Las contraseñas no coinciden";
   }
   if(empty($errores) && empty($errorEmail)){
     echo "Todo está correcto";
@@ -96,23 +103,22 @@ if($_POST){
     <div class="container">
       <h4>Formulario de Registro</h4>
       <?php
-      if(!empty($errores) && empty($errorEmail)){
-        foreach($errores as $error => $mensaje){
-          echo $mensaje;
-          echo '<br>';
-      }
-      echo '<br>';
-    }
-    else {
-      if($errorEmail!=''){
+      if(!empty($errorEmail)){
         echo $errorEmail;
       }
-    }
       ?>
       <form class="" action="registro.php" method="post" enctype="multipart/form-data">
+        <?php if($_POST && !empty($errores)){echo $errores['nombre'];} ?>
         <input class="controles" type="text" name="nombres" value="<?php echo $usuario['nombres']; ?>" placeholder="Ingrese su nombre">
+        <?php  if($_POST && !empty($errores)){echo $errores['apellido'];} ?>
         <input class="controles" type="text" name="apellido" value="<?php echo $usuario['apellido']; ?>" placeholder="Ingrese su apellido">
+        <?php if($_POST && !empty($errores)){echo $errores['email']; }?>
         <input class="controles" type="email" name="email" value="<?php echo $usuario['email']; ?>" placeholder="Ingrese su correo electronico">
+        <?php if($_POST && !empty($errores)){
+          echo $errores['password'];
+          echo '<br>';
+          echo $errores['nocoinciden'];   }
+        ?>
         <input class="controles" type="password" name="password" value="" placeholder="Ingrese su contraseña">
         <input class="controles" type="password" name="confirmacion" value="" placeholder="Vuelva a ingresar su contraseña">
         <button class="boton" type="submit" class="btn btn-secondary btn-sm">Registrar</a></button>
