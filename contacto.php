@@ -12,6 +12,7 @@
   <body>
 
     <?php //incluyo header:
+    session_start();
      require_once('header.php');
      ?>
     <div class="container">
@@ -63,7 +64,7 @@
     </div>
     </div>
     <div class="container-fluid footer" style="padding:0 !important">
-        <?php require_once('footer.html'); ?>
+        <?php require_once('footer.php'); ?>
     </div>
 
 

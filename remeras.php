@@ -11,6 +11,7 @@
   </head>
   <body>
     <?php //incluyo el header:
+    session_start();
     require_once('header.php');  ?>
 
 
@@ -51,7 +52,7 @@
 
     </div>
 
-    <?php require_once('footer.html'); ?>
+    <?php require_once('footer.php'); ?>
 
 
 

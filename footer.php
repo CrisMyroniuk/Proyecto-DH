@@ -23,9 +23,14 @@
 
           <div class="menu-footer">
                 <ul>
-
+                  <?php if(empty($_SESSION)){ ?>
                   <li><i class="fas fa-user-edit"></i> <a href="registro.php">REGISTRO</a></li>
                   <li><i class="fas fa-user"></i> <a href="login.php">LOGIN</a></li>
+                <?php } ?>
+                <?php if(!empty($_SESSION)){ ?>
+                  <li><i class="fas fa-user-edit"></i> <a href="perfil.php">MI PERFIL</a></li>
+                  <li><i class="fas fa-user"></i> <a href="logout.php">CERRAR SESION</a></li>
+                <?php } ?>
                   <li><i class="far fa-question-circle"></i> <a href="faqs.php">PREGUNTAS FRECUENTES</a></li>
                   <li><i class="far fa-envelope"></i> <a href="contacto.php">CONTACTO</a></li>
 

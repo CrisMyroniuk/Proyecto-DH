@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -20,6 +19,7 @@
 
 
       <?php //incluyo el header:
+      session_start();
       require_once('header.php');  ?>
 
       <div id="container">
@@ -107,7 +107,7 @@
 
             <?php
             //incluyo el footer:
-            require_once('footer.html'); ?>
+            require_once('footer.php'); ?>
 
         </div>
 
