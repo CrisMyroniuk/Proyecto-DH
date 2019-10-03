@@ -58,6 +58,7 @@ header label{
 header label:hover{
   cursor: pointer;
   background: rgba(0, 0, 0, 0.3);
+
 }
 
 .menu{
@@ -88,6 +89,7 @@ header img{
 
 .menu li:hover{
   background: rgba(0, 0, 0, 0.3);
+  border-left:5px solid #007bff;
 }
 .menu li a{
    display: block;

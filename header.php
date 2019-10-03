@@ -22,7 +22,7 @@
          <li><a href="pantalon.php">Pantalones</a></li>
          <li><a href="zapatillas.php">Zapatillas</a></li>
          <li><a href="buzos.php">Buzos</a></li>
-         <li><a href="musculosas.php">musculosas</a></li>
+         <li><a href="musculosas.php">Musculosas</a></li>
          <li><a href="accesorios.php">Accesorios</a></li>
          <hr>
          <li><a href="contacto.php">CONTACTO</a></li>

@@ -1,3 +1,10 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+
+}
 div#main h1{
   margin-top:40px;
   display:inline-block;
@@ -7,3 +14,18 @@ div#main h1{
 
 
 }
+div.titulo-ropa{
+  text-align: center;
+  font-style: italic;
+
+}
+div.precio-ropa{
+  text-align: center;
+  font-weight: bold;
+
+}
+div.precio-ropa span{
+
+  font-size:30px;
+  color:#007bff;
+ }

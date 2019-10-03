@@ -25,28 +25,58 @@
       <div class="row">
 
       <div class="col-xs-12 col-md-6 col-lg-4">
-      <a href="producto.php"><img class="foto" class="zoom" src="img/Shorts/Short1.jpg" alt=""></a>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat</p>
+      <a href="producto.php"><img class="foto zoom" src="img/Shorts/Short1.jpg" alt=""></a>
+      <div class="titulo-ropa">
+        <span>Short Nike Sport</span>
+      </div>
+      <div class="precio-ropa">
+        <span>$3000</span>
+     </div>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-        <a href="producto.php"><img class="foto" class="zoom" src="img/Shorts/Short2.jpg" alt=""></a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat non</p>
+        <a href="producto.php"><img class="foto zoom" src="img/Shorts/Short2.jpg" alt=""></a>
+        <div class="titulo-ropa">
+          <span>Short Nike Trainning</span>
+        </div>
+        <div class="precio-ropa">
+          <span>$3500</span>
+       </div>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-        <a href="producto.php"><img class="foto" class="zoom" src="img/Shorts/Short3.jpg" alt=""></a>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidat</p>
+        <a href="producto.php"><img class="foto zoom" src="img/Shorts/Short3.jpg" alt=""></a>
+        <div class="titulo-ropa">
+          <span>Short Nike Fusion</span>
+        </div>
+        <div class="precio-ropa">
+          <span>$2100</span>
+       </div>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-         <a href="producto.php"><img class="foto" class="zoom" src="img/Shorts/Short3.jpg" alt=""></a>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat non proident</p>
+         <a href="producto.php"><img class="foto zoom" src="img/Shorts/Short3.jpg" alt=""></a>
+         <div class="titulo-ropa">
+           <span>Short Nike Fusion</span>
+         </div>
+         <div class="precio-ropa">
+           <span>$2100</span>
+        </div>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-         <a href="producto.php"><img class="foto" class="zoom" src="img/Shorts/Short2.jpg" alt=""></a>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat non proident</p>
+         <a href="producto.php"><img class="foto zoom" src="img/Shorts/Short2.jpg" alt=""></a>
+         <div class="titulo-ropa">
+           <span>Short Nike Trainning</span>
+         </div>
+         <div class="precio-ropa">
+           <span>$3500</span>
+        </div>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-      <a href="producto.php"><img class="foto" class="zoom" src="img/Shorts/Short1.jpg" alt=""></a>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerccaecat cupidatat non proident</p>
+      <a href="producto.php"><img class="foto zoom" src="img/Shorts/Short1.jpg" alt=""></a>
+      <div class="titulo-ropa">
+        <span>Short Nike Sport</span>
+      </div>
+      <div class="precio-ropa">
+        <span>$3000</span>
+     </div>
       </div>
 
       </div>

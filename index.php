@@ -51,51 +51,69 @@
             </a>
           </div>
         </div>
-
+    
           <div id="main">
             <h1>PRODUCTOS</h1>
             <div class="row">
 
               <div class="col-xs-12 col-md-6 col-lg-4">
-              <a href="remeras.php"><img class="foto" class="zoom" src="img/imgInicio/Remeras.jpg" alt=""></a>
-              <div class="indicador">
-                <h3>Remeras</h3>
-              </div>
-              </div>
-              <div class="col-xs-12 col-md-6 col-lg-4">
-                <a href="pantalon.php"><img class="foto" class="zoom" src="img/imgInicio/Pantalon.jpg" alt=""></a>
+              <a href="remeras.php"><img class="foto zoom" src="img/imgInicio/Remeras.jpg" alt=""></a>
+              <a href="remeras.php">
                 <div class="indicador">
-                  <h3>Shorts</h3>
+                  <h3>Remeras</h3>
                 </div>
+              </a>
+
               </div>
               <div class="col-xs-12 col-md-6 col-lg-4">
-                 <a href="buzos.php"><img class="foto" class="zoom" src="img/imgInicio/Campera.JPG" alt=""></a>
-                 <div class="indicador">
-                   <h3>Buzos</h3>
-                 </div>
+                <a href="pantalon.php"><img class="foto zoom" src="img/imgInicio/Pantalon.jpg" alt=""></a>
+                <a href="pantalon.php">
+                  <div class="indicador">
+                    <h3>Shorts</h3>
+                  </div>
+                </a>
+
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                 <a href="buzos.php"><img class="foto zoom" src="img/imgInicio/Campera.JPG" alt=""></a>
+                 <a href="buzos.php">
+                   <div class="indicador">
+                     <h3>Buzos</h3>
+                   </div>
+                 </a>
+
               </div>
               <!--<div class="dividor cols-xs-12 col-lg-12">
 
               </div>-->
               <div class="col-xs-12 col-md-6 col-lg-4">
-                <!–  Hay que hacer musculosa.php   –>
-                 <a href="musculosas.php"><img class="foto" class="zoom" src="img/imgInicio/Musculosa.jpg" alt=""></a>
-                 <div class="indicador">
-                   <h3>Musculosas</h3>
-                 </div>
+
+                 <a href="musculosas.php"><img class="foto zoom" src="img/imgInicio/Musculosa.jpg" alt=""></a>
+                 <a href="musculosas.php">
+                   <div class="indicador">
+                     <h3>Musculosas</h3>
+                   </div>
+                 </a>
+
               </div>
               <div class="col-xs-12 col-md-6 col-lg-4">
-                 <a href="zapatillas.php"><img class="foto" class="zoom" src="img/imgInicio/Zapatillas.jpg" alt=""></a>
-                 <div class="indicador">
-                   <h3>Zapatillas</h3>
-                 </div>
+                 <a href="zapatillas.php"><img class="foto zoom" src="img/imgInicio/Zapatillas.jpg" alt=""></a>
+                 <a href="zapatillas.php">
+                   <div class="indicador">
+                     <h3>Zapatillas</h3>
+                   </div>
+                 </a>
+
               </div>
               <div class="col-xs-12 col-md-6 col-lg-4">
-                <!–  Hay que hacer accesorio.php   –>
-                 <a href="accesorios.php"><img class="foto" class="zoom" src="img/imgInicio/Accesorios.JPG" alt=""></a>
-                 <div class="indicador">
-                   <h3>Accesorios</h3>
-                 </div>
+
+                 <a href="accesorios.php"><img class="foto zoom" src="img/imgInicio/Accesorios.JPG" alt=""></a>
+                 <a href="accesorios.php">
+                   <div class="indicador">
+                     <h3>Accesorios</h3>
+                   </div>
+                 </a>
+
 
 
               </div>

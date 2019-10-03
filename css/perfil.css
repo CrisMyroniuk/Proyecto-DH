@@ -19,7 +19,18 @@ h1{
   text-align: center;
 
 }
-
+ul li{
+  text-decoration: none;
+  margin-left: 0;
+}
+ul li:hover{
+  text-decoration: none;
+  list-style: none;
+  border-left:9px solid #007bff;
+}
+ul li a:hover{
+  text-decoration: none;
+}
 .row{
   margin-top: 5vh;
 }

@@ -18,65 +18,64 @@
 
     <div id="main">
       <div class="titulo">
-        <h1>REMERAS</h1>
+        <h1>ACCESORIOS</h1>
       </div>
 
       <div class="row">
 
       <div class="col-xs-12 col-md-6 col-lg-4">
-           <a href="producto.php"><img class="foto zoom" src="img/Remeras/Remera1.jpg" alt=""></a>
+           <a href="producto.php"><img class="foto zoom"  src="img/Accesorios/Accesorio1.jpg" alt=""></a>
            <div class="titulo-ropa">
-             <span>Remera UnderArmour Trainning</span>
+             <span>Bolso UnderArmour Trainning</span>
            </div>
            <div class="precio-ropa">
-             <span>$2000</span>
+             <span>$5000</span>
           </div>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-          <a href="producto.php"><img class="foto zoom" src="img/Remeras/Remera2.jpg" alt=""></a>
+          <a href="producto.php"><img class="foto zoom"  src="img/Accesorios/Accesorio3.jpg" alt=""></a>
           <div class="titulo-ropa">
-            <span>Remera Jordan Argentina</span>
+            <span>Gorra UnderArmour</span>
           </div>
           <div class="precio-ropa">
-            <span>$3500</span>
+            <span>$2000</span>
          </div>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-           <a href="producto.php"><img class="foto zoom"  src="img/Remeras/Remera3.jpg" alt=""></a>
+           <a href="producto.php"><img class="foto zoom"  src="img/Accesorios/Accesorio2.jpg" alt=""></a>
            <div class="titulo-ropa">
-             <span>Remera Reebok Sport</span>
+             <span>Mochila UnderArmour Trainning</span>
            </div>
            <div class="precio-ropa">
-             <span>$2600</span>
+             <span>$4000</span>
           </div>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-           <a href="producto.php"><img class="foto zoom"  src="img/Remeras/Remera3.jpg" alt=""></a>
+           <a href="producto.php"><img class="foto zoom"  src="img/Accesorios/Accesorio2.jpg" alt=""></a>
            <div class="titulo-ropa">
-             <span>Remera Reebok Sport</span>
+             <span>Mochila UnderArmour Trainning</span>
            </div>
            <div class="precio-ropa">
-             <span>$2600</span>
+             <span>$4000</span>
           </div>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-4">
-           <a href="producto.php"><img class="foto zoom"  src="img/Remeras/Remera2.jpg" alt=""></a>
+           <a href="producto.php"><img class="foto zoom"  src="img/Accesorios/Accesorio3.jpg" alt=""></a>
            <div class="titulo-ropa">
-             <span>Remera Jordan Argentina</span>
-           </div>
-           <div class="precio-ropa">
-             <span>$3500</span>
-          </div>
-      </div>
-      <div class="col-xs-12 col-md-6 col-lg-4">
-           <a href="producto.php"><img class="foto zoom"  src="img/Remeras/Remera1.jpg" alt=""></a>
-           <div class="titulo-ropa">
-             <span>Remera UnderArmour Trainning</span>
+             <span>Gorra UnderArmour</span>
            </div>
            <div class="precio-ropa">
              <span>$2000</span>
           </div>
       </div>
+      <div class="col-xs-12 col-md-6 col-lg-4">
+           <a href="producto.php"><img class="foto zoom"  src="img/Accesorios/Accesorio1.jpg" alt=""></a>
+           <div class="titulo-ropa">
+             <span>Bolso UnderArmour Trainning</span>
+           </div>
+           <div class="precio-ropa">
+             <span>$5000</span>
+           </div>      </div>
 
       </div>
 
