@@ -23,6 +23,10 @@ div.indicador{
   width: 50%;
 
 }
+div #main h1{
+  font-size: 35px;
+  margin-top:30px;
+}
 div.col-xs-12{
 margin-bottom:20px!important;
 }
