@@ -15,13 +15,14 @@
        $usuario['nombres'] = $_POST['nombres'];
      }
      else{
-       $errores[]="Ingrese Nombre";
+       $errores[]="El nombre no puede estar vacío";
+
      }
      if($_POST['apellido']!=''){
        $usuario['apellido'] = $_POST['apellido'];
      }
      else{
-       $errores[]="Ingrese Apellido";
+       $errores[]="El apellido no puede estar vacío";
      }
      if($_POST['email']!=''){
 
@@ -39,25 +40,26 @@
 
      }
      else {
-       $errores[]="Ingrese email";
+       $errores[]="Ingrese un email";
      }
     if($_POST['password']!=''){
       $usuario['password'] = $_POST['password'];
     }
     else {
-     $errores[]="Ingrese contraseña";
+     $errores[]="La contraseña no puede estar vacía";
     }
     if($_POST['confirmacion']!=''){
       $usuario['confirmacion'] = $_POST['confirmacion'];
     }
     else {
-      $errores[]= "Confirme contraseña";
+      $errores[]= "Confirme su contraseña";
     }
     if($_POST['password'] != $_POST['confirmacion']){
       $errores[]="Las contraseñas no coinciden";
     }
     if(empty($errores) && empty($errorEmail)){
       echo "Todo está correcto";
+
      //si salio todo bien redirecciono y guardo en un json
      $hash1=password_hash($usuario['password'],PASSWORD_DEFAULT);
      $hash2=password_hash($usuario['confirmar'],PASSWORD_DEFAULT);
@@ -86,6 +88,7 @@
     <title>DIGITAL SPORT</title>
   </head>
   <body>
+
     <?php require_once('header.php'); ?>
 
     <div class="container">
@@ -106,7 +109,7 @@
       ?>
       <form class="" action="registro.php" method="post" enctype="multipart/form-data">
         <input class="controles" type="text" name="nombres" value="<?php echo $usuario['nombres']; ?>" placeholder="Ingrese su nombre">
-        <input class="controles" type="text" name="apellido" value="<?php echo $usuario['apellido']; ?>" placeholder="Ingrese su apellido">
+        <input class="controles" type="text" name="apellido" value="<?php echo $usuario['apellido']; ?>" placeholder="Ingrese su apellido" >
         <input class="controles" type="email" name="email" value="<?php echo $usuario['email']; ?>" placeholder="Ingrese su correo electronico">
         <input class="controles" type="password" name="password" value="" placeholder="Ingrese su contraseña">
         <input class="controles" type="password" name="confirmacion" value="" placeholder="Vuelva a ingresar su contraseña">

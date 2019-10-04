@@ -23,6 +23,10 @@
   font-size: 22px;
   margin-bottom: 20px;
   text-align: center;
+  font-weight: bolder;
+  text-decoration: inherit;
+
+
 
 }
 
@@ -60,7 +64,6 @@
   font-size: 15px;
 
 }
-
 
 
 @media (max-width:760px){

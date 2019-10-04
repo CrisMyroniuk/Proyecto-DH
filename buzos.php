@@ -16,7 +16,6 @@
     require_once('header.php');  ?>
 
 
-
     <div id="main">
       <h1>BUZOS</h1>
       <div class="row">

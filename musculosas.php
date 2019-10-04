@@ -14,8 +14,6 @@
     session_start();
     require_once('header.php');  ?>
 
-
-
     <div id="main">
       <div class="titulo">
         <h1>MUSCULOSAS</h1>

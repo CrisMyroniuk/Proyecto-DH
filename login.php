@@ -9,7 +9,7 @@ session_start();
       $email=$_POST['email'];
     }
     else{
-      $errores[]="Ingrese email";
+      $errores[]="Ingrese su email";
     }
     if($_POST['password']!=''){
       $password=$_POST['password'];
