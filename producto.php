@@ -46,6 +46,7 @@
               </p>
 
             </form>
+
             <div class="carrito">
               <button id="carrito" style="padding:10px!important;" type="button" class="btn btn-primary btn-lg btn-block">AGREGAR AL CARRITO <i class="fas fa-cart-plus"></i></button>
             </div>

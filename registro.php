@@ -59,7 +59,7 @@ session_start();
       $errores[]="Las contraseñas no coinciden";
     }
     if(empty($errores) && empty($errorEmail)){
-      echo "Todo está correcto";
+      
 
      //si salio todo bien redirecciono y guardo en un json
      $hash1=password_hash($usuario['password'],PASSWORD_DEFAULT);
@@ -70,7 +70,7 @@ session_start();
      //Guardo en json mi usuario, lo codifico en json denuevo y lo subo:
 
      $usuarios[] = $usuario;
-     var_dump($usuarios);
+
      $json=json_encode($usuarios);
      FILE_PUT_CONTENTS('usuario.json',$json);
      header('location:login.php');
