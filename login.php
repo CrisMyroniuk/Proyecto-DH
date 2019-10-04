@@ -4,7 +4,6 @@ session_start();
   if($_POST){
     $errores=[];
     $usuario=[];
-    $seLogeo=false;
     if($_POST['email']!=''){
       $email=$_POST['email'];
     }
@@ -25,20 +24,22 @@ session_start();
       if($usuarios['email']==$email && password_verify($password, $usuarios['password'])){
         $_SESSION['email']=$email;
         $_SESSION['nombres']=$usuarios['nombres'];
-        $seLogeo=true;
+        $_SESSION['selogeo']=true;
+
       }
   }
 }
- if($seLogeo==false){
+ if($_SESSION['selogeo']!=true){
    $_SESSION['email']='';
    $_SESSION['nombres']='';
+   $_SESSION['selogeo']='';
  }
-  if(!empty($_POST['mantenerme']) && $seLogeo){
+  if(!empty($_POST['mantenerme']) && $_SESSION['selogeo']==true){
     setcookie('email', $email, time() + 60*60*24*30);
     header('location:perfil.php');
   }
   else{
-    if($seLogeo){
+    if($_SESSION['selogeo']==true){
       header('location:perfil.php');
     }
   }
@@ -70,7 +71,7 @@ session_start();
       <h4>Iniciar Sesión</h4>
       <?php
       if($_POST){
-      if(!$seLogeo && empty($errores)){
+      if($_SESSION['selogeo']!=true && empty($errores)){
       echo "email o contraseña invalida";
     }
     else{

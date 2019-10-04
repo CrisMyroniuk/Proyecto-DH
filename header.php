@@ -1,10 +1,13 @@
 <!DOCTYPE html>
+<?php
+  if($_SESSION!=''){
+    $selogeo=$_SESSION['selogeo'];
+
+  }?>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title></title>
-
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/header.css">
     <link href="https://fonts.googleapis.com/css?family=Michroma&display=swap" rel="stylesheet">
@@ -27,11 +30,11 @@
          <hr>
          <li><a href="contacto.php">CONTACTO</a></li>
          <li><a href="faqs.php">FAQS</a></li>
-         <?php if(empty($_SESSION)){ ?>
+         <?php if($selogeo!=true){ ?>
          <li><a href="registro.php">REGISTRO</a></li>
          <li><a href="login.php">LOGIN</a></li>
        <?php } ?>
-       <?php if(!empty($_SESSION)){ ?>
+       <?php if($selogeo==true){ ?>
          <li><a href="perfil.php">MI PERFIL</a></li>
          <li><a href="logout.php">CERRAR SESIÓN</a></li>
        <?php } ?>
@@ -40,10 +43,10 @@
 
      </nav>
 
-      <?php  if(empty($_SESSION)){ ?> <button type="button" name="button"> <a href="login.php"> <img  src="img/logearse.svg" alt=""> </a> </button>
+      <?php if($selogeo!=true){ ?> <button type="button" name="button"> <a href="login.php"> <img src="img/logearse.svg" alt=""> </a> </button>
       <?php } ?>
-    <?php if(!empty($_SESSION)) { ?>
-      <button type="button" name="button"> <a href="perfil.php"> <img src="img/login.svg" alt=""> </a> </button>
+    <?php if($selogeo==true){ ?>
+      <button type="button" name="button"> <a href="perfil.php"> <img src="img/login.svg" alt=""></a> </button>
       <button type="button" name="button"> <a href="miscompras.php"> <img src="img/carrito.svg" alt=""> </a> </button>
     <?php } ?>
 

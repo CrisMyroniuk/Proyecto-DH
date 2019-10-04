@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php
+  if($_SESSION!=''){
+    $selogeo=$_SESSION['selogeo'];
+
+  }?>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -23,11 +28,11 @@
 
           <div class="menu-footer">
                 <ul>
-                  <?php if(empty($_SESSION)){ ?>
+                  <?php if($selogeo!=true){ ?>
                   <li><i class="fas fa-user-edit"></i> <a href="registro.php">REGISTRO</a></li>
                   <li><i class="fas fa-user"></i> <a href="login.php">LOGIN</a></li>
                 <?php } ?>
-                <?php if(!empty($_SESSION)){ ?>
+                <?php if($selogeo==true){ ?>
                   <li><i class="fas fa-user-edit"></i> <a href="perfil.php">MI PERFIL</a></li>
                   <li><i class="fas fa-user"></i> <a href="logout.php">CERRAR SESION</a></li>
                 <?php } ?>
