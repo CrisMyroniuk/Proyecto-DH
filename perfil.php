@@ -7,6 +7,9 @@ if(!empty($_SESSION)){
   $nombre=$_SESSION['nombres'];
 
 }
+else{
+  header('location:login.php');
+}
  ?>
 
 <html lang="en" dir="ltr">

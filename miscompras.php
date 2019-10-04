@@ -1,3 +1,9 @@
+<?php session_start();
+
+  if(empty($_SESSION)){
+    header('location:login.php');
+
+} ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -6,7 +12,7 @@
   </head>
   <body>
     <?php //incluyo el header:
-    session_start();
+
     require_once('header.php');  ?>
 
     <?php
