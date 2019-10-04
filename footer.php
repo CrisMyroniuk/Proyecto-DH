@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <?php
-  if($_SESSION!=''){
+  if($_SESSION){
     $selogeo=$_SESSION['selogeo'];
 
+  }
+  else{
+    $selogeo="";
   }?>
 <html lang="en" dir="ltr">
   <head>

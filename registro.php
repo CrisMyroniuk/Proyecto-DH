@@ -1,4 +1,5 @@
 <?php
+session_start();
   $usuario=[
     'nombres' => '',
     'email'=> '',
