@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -29,7 +30,7 @@
             <h1>NOMBRE PRODUCTO</h1>
             <h3>$$$$</h3>
             <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-            <form class="" action="index.html" method="post">
+            <form class="" action="producto.php" method="post">
               <p class="cantidad">
                 <label for="cantidad">Cantidad</label>
                 <input class="cantidad" type="number" name="cantidad" value="" min="1" max="9">
@@ -48,7 +49,7 @@
             </form>
 
             <div class="carrito">
-              <button id="carrito" style="padding:10px!important;" type="button" class="btn btn-primary btn-lg btn-block">AGREGAR AL CARRITO <i class="fas fa-cart-plus"></i></button>
+              <button id="carrito" style="padding:10px!important;" type="submit" class="btn btn-primary btn-lg btn-block">AGREGAR AL CARRITO <i class="fas fa-cart-plus"></i></button>
             </div>
           </div>
         </div>

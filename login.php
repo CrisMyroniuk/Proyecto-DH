@@ -4,6 +4,7 @@ session_start();
   if($_POST){
     $errores=[];
     $usuario=[];
+    $_SESSION['selogeo']="";
     if($_POST['email']!=''){
       $email=$_POST['email'];
     }
