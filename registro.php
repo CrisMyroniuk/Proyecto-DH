@@ -6,6 +6,7 @@ session_start();
     'apellido' => '',
     'password' => '',
     'confirmacion' => '',
+    'avatar'=>''
   ];
 
   $errores=[
@@ -13,12 +14,24 @@ session_start();
     'email'=> '',
     'apellido' => '',
     'password' => '',
-    'confirmacion' => ''
+    'confirmacion' => '',
+    'avatar' => ''
   ];
   $errorEmail='';
-
  if($_POST){
 
+   if ($_FILES['avatar']['error'] === 0) {
+       //pido la extension del archivo
+       $ext = pathinfo($_FILES['avatar']['name'], PATHINFO_EXTENSION);
+
+       if ($ext != 'png' && $ext != 'jpg' && $ext != 'jpeg') {
+           $errorAvatar = 'archivo de formato invalido';
+       } else {
+           $usuario['avatar'] = $_POST['email'] . '.' . $ext;
+           //voy a mover el archivo del temporal a mi carpeta avatars
+           move_uploaded_file($_FILES['avatar']['tmp_name'], 'avatars/' . $usuario['avatar']);
+       }
+   }
      if($_POST['nombres']!=''){
        $usuario['nombres'] = $_POST['nombres'];
      }
@@ -114,7 +127,10 @@ session_start();
         <input class="controles" type="password" name="password" value="" placeholder="Ingrese su contraseña">
 
         <input class="controles" type="password" name="confirmacion" value="" placeholder="Vuelva a ingresar su contraseña">
-
+        <div class="form-group">
+          <label for="avatar">Subir avatar</label>
+          <input type="file"  id="avatar" name="avatar">
+        </div>
         <button class="boton" type="submit" class="btn btn-secondary btn-sm">Registrar</a></button>
         <p>Ya estás registrado? <a class="link" href="login.php">Iniciar sesión</a></a> </p>
 
