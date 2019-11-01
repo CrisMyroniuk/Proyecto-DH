@@ -8,22 +8,29 @@ session_start();
     'confirmacion' => '',
   ];
 
-  $errores=[];
+  $errores=[
+    'nombres' => '',
+    'email'=> '',
+    'apellido' => '',
+    'password' => '',
+    'confirmacion' => ''
+  ];
   $errorEmail='';
+
  if($_POST){
 
      if($_POST['nombres']!=''){
        $usuario['nombres'] = $_POST['nombres'];
      }
      else{
-       $errores[]="El nombre no puede estar vacío";
+       $errores['nombres']="El nombre no puede estar vacío";
 
      }
      if($_POST['apellido']!=''){
        $usuario['apellido'] = $_POST['apellido'];
      }
      else{
-       $errores[]="El apellido no puede estar vacío";
+       $errores['apellido']="El apellido no puede estar vacío";
      }
      if($_POST['email']!=''){
 
@@ -34,36 +41,36 @@ session_start();
        $usuarios=json_decode($archivo,true);
        foreach($usuarios as $emailRegistrado){
          if($emailRegistrado['email']==$usuario['email']){
-           $errorEmail='El email ya se encuentra registrado';
+           $errores['email']='El email ya se encuentra registrado';
 
          }
        }
 
      }
      else {
-       $errores[]="Ingrese un email";
+      $errores['email']="Ingrese un email";
      }
     if($_POST['password']!=''){
       $usuario['password'] = $_POST['password'];
     }
     else {
-     $errores[]="La contraseña no puede estar vacía";
+     $errores["password"]="La contraseña no puede estar vacía";
     }
     if($_POST['confirmacion']!=''){
       $usuario['confirmacion'] = $_POST['confirmacion'];
     }
     else {
-      $errores[]= "Confirme su contraseña";
+      $errores["password"]= "Confirme su contraseña";
     }
     if($_POST['password'] != $_POST['confirmacion']){
-      $errores[]="Las contraseñas no coinciden";
+      $errores["password"]="Las contraseñas no coinciden";
     }
-    if(empty($errores) && empty($errorEmail)){
-      
+    if($errores['nombres']==""&&$errores['apellido']==""&&$errores['email']==""&&$errores['password']==""){
+
 
      //si salio todo bien redirecciono y guardo en un json
      $hash1=password_hash($usuario['password'],PASSWORD_DEFAULT);
-     $hash2=password_hash($usuario['confirmar'],PASSWORD_DEFAULT);
+     $hash2=password_hash($usuario['confirmacion'],PASSWORD_DEFAULT);
      $usuario['password']=$hash1;
      $usuario['confirmacion']=$hash2;
 
@@ -72,8 +79,9 @@ session_start();
      $usuarios[] = $usuario;
 
      $json=json_encode($usuarios);
-     FILE_PUT_CONTENTS('usuario.json',$json);
-     header('location:login.php');
+     FILE_PUT_CONTENTS('usuario.json',$json);?>
+
+    <?php /*header('location:login.php');*/
       }
 }
 ?>
@@ -94,25 +102,17 @@ session_start();
 
     <div class="container">
       <h4>Formulario de Registro</h4>
-      <?php
-      if(!empty($errores) && empty($errorEmail)){
-        foreach($errores as $error => $mensaje){
-          echo $mensaje;
-          echo '<br>';
-      }
-      echo '<br>';
-    }
-    else {
-      if($errorEmail!=''){
-        echo $errorEmail;
-      }
-    }
-      ?>
+
       <form class="" action="registro.php" method="post" enctype="multipart/form-data">
+        <div class="error"><?php echo $errores['nombres']; ?></div>
         <input class="controles" type="text" name="nombres" value="<?php echo $usuario['nombres']; ?>" placeholder="Ingrese su nombre">
+        <div class="error"><?php echo $errores['apellido']; ?></div>
         <input class="controles" type="text" name="apellido" value="<?php echo $usuario['apellido']; ?>" placeholder="Ingrese su apellido" >
+        <div class="error"><?php echo $errores['email']; ?></div>
         <input class="controles" type="email" name="email" value="<?php echo $usuario['email']; ?>" placeholder="Ingrese su correo electronico">
+        <div class="error"><?php echo $errores['password']; ?></div>
         <input class="controles" type="password" name="password" value="" placeholder="Ingrese su contraseña">
+
         <input class="controles" type="password" name="confirmacion" value="" placeholder="Vuelva a ingresar su contraseña">
 
         <button class="boton" type="submit" class="btn btn-secondary btn-sm">Registrar</a></button>
@@ -121,6 +121,16 @@ session_start();
 
 
       </form>
+      <?php
+       if($usuario['nombres']!=""&&$usuario['apellido']!=""&&$usuario['email']!=""&&$usuario['password']!=""&&$usuario['confirmacion']!=""){?>
+        <div class="alert alert-success" role="alert">
+      <h4 class="alert-heading">USUARIO REGISTRADO!</h4>
+      <p>Bienvenido <?php echo $usuario['nombres']; ?>, con email <?php echo $usuario['email']; ?> </p>
+      <hr>
+      <p class="mb-0">Gracias por confiar en nosotros.</p>
+    </div>
+
+    <?php  } ?>
 
     </div>
 

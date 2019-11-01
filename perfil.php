@@ -1,6 +1,7 @@
 
 <?php
 session_start();
+var_dump($_COOKIES);
 $nombre='';
 if(!empty($_SESSION)){
 
