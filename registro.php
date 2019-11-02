@@ -1,5 +1,6 @@
 <?php
 session_start();
+$registroCorrecto=0;
   $usuario=[
     'nombres' => '',
     'email'=> '',
@@ -19,7 +20,6 @@ session_start();
   ];
   $errorEmail='';
  if($_POST){
-
    if ($_FILES['avatar']['error'] === 0) {
        //pido la extension del archivo
        $ext = pathinfo($_FILES['avatar']['name'], PATHINFO_EXTENSION);
@@ -90,7 +90,7 @@ session_start();
      //Guardo en json mi usuario, lo codifico en json denuevo y lo subo:
 
      $usuarios[] = $usuario;
-
+     $registroCorrecto = 1;
      $json=json_encode($usuarios);
      FILE_PUT_CONTENTS('usuario.json',$json);?>
 
@@ -138,7 +138,7 @@ session_start();
 
       </form>
       <?php
-       if($usuario['nombres']!=""&&$usuario['apellido']!=""&&$usuario['email']!=""&&$usuario['password']!=""&&$usuario['confirmacion']!=""){?>
+       if($registroCorrecto==1){?>
         <div class="alert alert-success" role="alert">
       <h4 class="alert-heading">USUARIO REGISTRADO!</h4>
       <p>Bienvenido <?php echo $usuario['nombres']; ?>, con email <?php echo $usuario['email']; ?> </p>
