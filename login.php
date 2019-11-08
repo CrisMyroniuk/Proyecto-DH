@@ -35,8 +35,12 @@ session_start();
    $_SESSION['nombres']='';
    $_SESSION['selogeo']='';
  }
+<<<<<<< HEAD
   if(!empty($_POST['mantenerme']) && $_SESSION['selogeo']==true){
 
+=======
+  if(isset($_POST['mantenerme']) && $_SESSION['selogeo']==true){
+>>>>>>> c24a9a87f3104544b53a11df032f9fee9a7f5e78
     setcookie('email', $email, time() + 60*60*24*30);
     header('location:perfil.php');
   }
