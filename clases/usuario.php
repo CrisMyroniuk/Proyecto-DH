@@ -11,8 +11,8 @@ class Usuario{
 public function __construct($nombre,$apellido,$email,$password){
   $this->setNombre($nombre);
   $this->setApellido($apellido);
-  $this->}setEmail($email);
-  $this->setPass($password);
+  $this->setEmail($email);
+  $this->setPassword($password);
 }
 
 //Hago set y get//
@@ -41,11 +41,11 @@ public function getEmail(){
   return $this->email;
 }
 
-public function setPass($password){
+public function setPassword($password){
   $this->password = $this->encriptarPass($password);
 }
 
-public function getPass(){
+public function getPassword(){
   return $this->password;
 }
 

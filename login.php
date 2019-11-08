@@ -1,55 +1,34 @@
 <?php
-session_start();
-
-  if($_POST){
-    $errores=[];
-    $usuario=[];
-    $_SESSION['selogeo']="";
-    if($_POST['email']!=''){
-      $email=$_POST['email'];
-    }
-    else{
-      $errores[]="Ingrese su email";
-    }
-    if($_POST['password']!=''){
-      $password=$_POST['password'];
-    }
-    else{
-      $errores[]="Ingrese su contraseña";
-    }
-    if(empty($errores)){
-    $usuariosjson=FILE_GET_CONTENTS('usuario.json');
-    $datosusuarios=json_decode($usuariosjson,true);
-
-    foreach ($datosusuarios as $usuarios) {
-      if($usuarios['email']==$email && password_verify($password, $usuarios['password'])){
-        $_SESSION['email']=$email;
-        $_SESSION['nombres']=$usuarios['nombres'];
-        $_SESSION['selogeo']=true;
-
-      }
-  }
-}
- if($_SESSION['selogeo']!=true){
-   $_SESSION['email']='';
-   $_SESSION['nombres']='';
-   $_SESSION['selogeo']='';
- }
-
-  if(!empty($_POST['mantenerme']) && $_SESSION['selogeo']==true){
 
 
-  if(isset($_POST['mantenerme']) && $_SESSION['selogeo']==true){
+include_once('clases/autoload.php');
 
-    setcookie('email', $email, time() + 60*60*24*30);
-    header('location:perfil.php');
+if($_POST){
+
+  $validador = new validadorLogin($_POST['email'], $_POST['password']);
+  $errores = $validador->validar();
+  
+  if(empty($errores))
+  {
+    //si errores está vacio mando a autenticar al Usuario
+
+    $usuario = baseDeDatos::buscarPorEmail($_POST['email']);
+
+    $autenticar = new autenticador;
+
+    $autenticar->logear($usuario);
+
+    header('location: perfil.php');
+
   }
   else{
-    if($_SESSION['selogeo']==true){
-      header('location:perfil.php');
+    //informo los errores
+    foreach($errores as $error){
+      echo $error;
     }
-  }}
+  }
 }
+
  ?>
 
 
@@ -75,20 +54,7 @@ session_start();
 
     <div class="container">
       <h4>Iniciar Sesión</h4>
-      <?php
-      if($_POST){
-      if($_SESSION['selogeo']!=true && empty($errores)){
-      echo "email o contraseña invalida";
-    }
-    else{
-      foreach($errores as $error){
-        echo $error;
-        echo '<br>';
-      }
-  }
-  echo '<br>';
-}
-       ?>
+
       <form class="" action="login.php" method="post" enctype="multipart/form-data">
       <input class="controles" type="email" name="email" value="" placeholder="Ingrese su correo electronico">
       <input class="controles" type="password" name="password" value="" placeholder="Ingrese su contraseña">
