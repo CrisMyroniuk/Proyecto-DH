@@ -1,5 +1,17 @@
 <?php
 
+/*  Base de datos:
+
+CREATE TABLE usuarios(
+id int auto_increment primary key,
+nombre varchar(50),
+apellido varchar(50),
+email varchar(100) unique,
+pass varchar(100)
+);
+
+*/
+
 class baseDeDatos{
 
   public static function buscarPorEmail(string $email) {
