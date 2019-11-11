@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <?php
-  if($_SESSION){
-    $selogeo=$_SESSION['selogeo'];
+$seLogeo = false;
 
+  if($_SESSION){
+    $selogeo = true;
   }
   else{
-    $selogeo="";
-  }?>
+    $selogeo= false;
+  }
+  ?>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">

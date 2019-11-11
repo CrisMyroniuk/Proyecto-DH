@@ -1,29 +1,33 @@
 <?php
 
 include_once('clases/autoload.php');
+
 $errores = [
   'nombres' => '',
   'email' => '',
   'apellido' => '',
-  'password' => ''
+  'password' => '',
 ];
 
-$usuario = [
-  'nombres' => '',
-  'apellido' => '',
-  'email' => '',
-];
+$nombre = '';
+$apellido = '';
+$email = '';
 
 $registroCorrecto = 0;
 
 if($_POST){
 
- $validador = new validadorRegistro($_POST['email'], $_POST['password'], $_POST['confirmar']);
+$validador = new validadorRegistro($_POST['email'], $_POST['password'], $_POST['confirmar']);
+$errores = $validador->validar();
 
- $errores = $validador->validar();
+$nombre = $_POST['nombres'];
+$apellido = $_POST['apellido'];
+$email = $_POST['email'];
 
 
- if(empty($errores)){
+
+
+ if($errores['email'] == '' && $errores['password'] ==  ''){
   $usuario = new usuario($_POST['nombres'], $_POST['apellido'], $_POST['email'], $_POST['password']);
   $carrito = new carrito($usuario);
 
@@ -31,7 +35,6 @@ if($_POST){
   $registroCorrecto = 1;
   //header('location: login.php');
  }
-
 
 
 }
@@ -57,12 +60,12 @@ if($_POST){
 
       <form class="" action="registro.php" method="post" enctype="multipart/form-data">
         <div class="error"></div>
-        <input class="controles" type="text" name="nombres" value="<?php echo $usuario['nombres']; ?>" placeholder="Ingrese su nombre">
+        <input class="controles" type="text" name="nombres" value="<?php echo $nombre; ?>" placeholder="Ingrese su nombre">
         <div class="error"></div>
-        <input class="controles" type="text" name="apellido" value="<?php echo $usuario['apellido']; ?>" placeholder="Ingrese su apellido" >
+        <input class="controles" type="text" name="apellido" value="<?php echo $apellido ?>" placeholder="Ingrese su apellido" >
         <div class="error"><?php echo $errores['email']; ?></div>
-        <input class="controles" type="email" name="email" value="<?php echo $usuario['email']; ?>" placeholder="Ingrese su correo electronico">
-        <div class="error"><?php echo $errores['password']; ?></div>
+        <input class="controles" type="email" name="email" value="<?php echo $email ?>" placeholder="Ingrese su correo electronico">
+        <div class="error"><?php  echo $errores['password']; ?></div>
         <input class="controles" type="password" name="password" value="" placeholder="Ingrese su contraseña">
 
         <input class="controles" type="password" name="confirmar" value="" placeholder="Vuelva a ingresar su contraseña">
@@ -80,7 +83,7 @@ if($_POST){
        if($registroCorrecto==1){?>
         <div class="alert alert-success" role="alert">
       <h4 class="alert-heading">USUARIO REGISTRADO!</h4>
-      <p>Bienvenido <?php echo $usuario['nombres']; ?>, con email <?php echo $usuario['email']; ?> </p>
+      <p>Bienvenido <?php echo $usuario->getNombre(); ?>, con email <?php echo $usuario->getEmail(); ?> </p>
       <hr>
       <p class="mb-0">Gracias por confiar en nosotros.</p>
     </div>

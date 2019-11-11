@@ -2,11 +2,13 @@
 <?php
 session_start();
 if(isset($_COOKIES)){
-  var_dump($_COOKIES); }
-$nombre='';
-if(!empty($_SESSION)){
+  var_dump($_COOKIES);
+}
 
-  $nombre=$_SESSION['nombres'];
+$nombre = '';
+if($_SESSION){
+
+  $nombre = $_SESSION['nombres'];
 
 }
 else{

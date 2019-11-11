@@ -11,7 +11,8 @@ class autenticador {
   public function logear(usuario $usuario)
   {
     $_SESSION['email'] = $usuario->getEmail();
-    $_SESSION['nombre'] = $usuario->getNombre();
+    $_SESSION['nombres'] = $usuario->getNombre();
+    
   }
 
   public function deslogear()

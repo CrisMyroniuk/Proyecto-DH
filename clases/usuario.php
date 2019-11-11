@@ -1,10 +1,10 @@
 <?php
 
 class Usuario{
-  private $nombre;
-  private $apellido;
-  private $email;
-  private $password;
+  protected $nombre;
+  protected $apellido;
+  protected $email;
+  protected $password;
 
 //creo el constructor//
 
@@ -42,15 +42,11 @@ public function getEmail(){
 }
 
 public function setPassword($password){
-  $this->password = $this->encriptarPass($password);
+  $this->password = password_hash($password,PASSWORD_DEFAULT);
 }
 
 public function getPassword(){
   return $this->password;
-}
-
-public function encriptarPass(string $password) :string {
-  return password_hash($password,PASSWORD_DEFAULT);
 }
 
 }

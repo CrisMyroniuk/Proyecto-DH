@@ -35,27 +35,30 @@
 
    public function validar() : array
    {
-     $errores = [];
-     $formato = $this->validarEmail($this->getEmail());
-     $contraseña = $this->validarPassword($this->getPassword());
+     $errores = [
+       'nombres' => '',
+       'email' => '',
+       'apellido' => '',
+       'password' => '',
+     ];
 
-     if(!$formato){
-       $errores['email'] = "El email no cumple formato";
-     }
+     $contraseña = $this->validarPassword($this->getPassword());
 
      if(!$contraseña){
        $errores['password'] = "La contraseña no es valida";
      }
 
 
-     if(empty($erroresRegistro)){
-       $existe = baseDeDatos::existeEmail($this->getEmail());
+     if($errores['password'] == ''){
+
+       $existe = baseDeDatos::existeEmail($this->getEmail()); //false si existe
 
        if(!$existe){
          $errores['email'] = "El email ya se encuentra registrado";
        }
        else{
-         if ( password_verify($this->getPassword(), $this->getConfirmar()) ){
+
+         if ( $this->getPassword() != $this->getConfirmar() ) {
            $errores['password'] = "Las contraseñas no coinciden";
 
          }

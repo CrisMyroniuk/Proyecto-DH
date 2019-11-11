@@ -7,7 +7,7 @@ if($_POST){
 
   $validador = new validadorLogin($_POST['email'], $_POST['password']);
   $errores = $validador->validar();
-  
+
   if(empty($errores))
   {
     //si errores está vacio mando a autenticar al Usuario
@@ -17,6 +17,7 @@ if($_POST){
     $autenticar = new autenticador;
 
     $autenticar->logear($usuario);
+    
 
     header('location: perfil.php');
 

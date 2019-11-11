@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <?php
+$seLogeo = false;
 
   if($_SESSION){
-    $selogeo=$_SESSION['selogeo'];
-
+    $selogeo = true;
   }
   else{
-    $selogeo='';
+    $selogeo= false;
   }
   ?>
 
