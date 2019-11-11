@@ -50,8 +50,8 @@
 
         else {
           // var_dump(password_verify($this->getPassword(), $usuarioBD->getPassword())); exit; //me tira false cuando deberia darme true
-
-          if(!password_verify($this->getPassword(), $usuarioBD->getPassword()) ){
+          $hash = $usuarioBD->getPassword();
+          if(!password_verify($this->getPassword(), $hash) ){
           $erroresLogeo['email'] = 'Usuario o clave invalidos';
 
              }
