@@ -49,7 +49,7 @@
           }
 
         else {
-          var_dump(password_verify($this->getPassword(), $usuarioBD->getPassword())); exit; //me tira false cuando deberia darme true
+          // var_dump(password_verify($this->getPassword(), $usuarioBD->getPassword())); exit; //me tira false cuando deberia darme true
 
           if(!password_verify($this->getPassword(), $usuarioBD->getPassword()) ){
           $erroresLogeo['email'] = 'Usuario o clave invalidos';
