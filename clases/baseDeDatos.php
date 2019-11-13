@@ -55,7 +55,9 @@ class baseDeDatos{
   $nombre = $usuario->getNombre();
   $apellido = $usuario->getApellido();
   $email = $usuario->getEmail();
-  $password = $usuario->getPassword();
+  $hash= password_hash($usuario->getPassword(),PASSWORD_DEFAULT);
+  $password = $hash;
+
 
   $sql = "insert into usuarios values (default, '$nombre' ,'$apellido','$email','$password')";
   $sentencia = $conex->prepare($sql);

@@ -42,8 +42,9 @@
         if($password){
 
           $usuarioBD = baseDeDatos::buscarPorEmail($this->getEmail());
-
-
+          //var_dump(password_hash($this->getPassword(), PASSWORD_DEFAULT)); exit;
+          //var_dump($this->getPassword()); exit;
+          //var_dump($usuarioBD); exit;
         if(!isset($usuarioBD)){
             $erroresLogeo['email'] = "Email o contraseña invalidos";
           }
@@ -51,10 +52,12 @@
         else {
           // var_dump(password_verify($this->getPassword(), $usuarioBD->getPassword())); exit; //me tira false cuando deberia darme true
           $hash = $usuarioBD->getPassword();
+          var_dump(password_verify($this->getPassword(), $hash));
           if(!password_verify($this->getPassword(), $hash) ){
           $erroresLogeo['email'] = 'Usuario o clave invalidos';
 
              }
+
 
            }
       }
